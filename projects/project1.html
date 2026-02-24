@@ -27,30 +27,590 @@
     <main>
 
     <section class="project-detail">
-        <h1>Project # 1: Title</h1>
+        <h1>Project # 1: Hardware Optimization and Selection for Machine Vision Systems and Applications</h1>
+        <br>
+        <br>
+        <br>
+        <h2>1. Objective</h2>
+        <br>
+        The objective of this project is to demonstrate the step-by-step process for selecting the different types of hardware parts and components of real-world machine vision systems.
+        <br>
+        <br>
+        <h2>2. Machine Vision Systems</h2>
+        <br>
+        <h3>2.1: Overview</h3>
+        <br>
+        <p>A machine vision system is a specialized technology that provides imaging-based automatic inspection and analysis for industrial applications. Essentially acting as the "eyes" of a machine, it uses hardware and software to capture and interpret visual data, allowing equipment to make rapid, objective decisions without human intervention. An overview of a general machine vision system is illustrated in the figure below.</p>
+        <br>
+        <div style="text-align: center;">
+            <img src="../assets/images/machine-vision-system-diagram-01.jpg" alt="Machine Vision System Diagram" title="Figure 1: A typical machine vIsion system." width="800px">
+        </div>
+        <br>
+        <h3>2.2: Hardware Components</h3>
+        <br>
+        <p>The hardware components of a machine vision system consist of a coordinated set of devices designed for high-speed, accurate image acquisition and analysis. The core components include a light source, lens, camera (sensor), vision processing unit, and communication system. These systems use specialized optics and lighting to generate high-contrast images for inspection or automation. </p>
+        <br>
+        <div>
+            <table class="modern-table">
+                <tr>
+                    <th>#</th>
+                    <th>Hardware Component</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lighting (Illumination)</td>
+                    <td>Essential for high-quality images, often using techniques like dome, ring, or line lights to create contrast for inspection</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lens (Optics)</td>
+                    <td>Collects light from the object and focuses it onto the camera sensor, with choices based on focal length, magnification, and depth of field.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Camera (Sensor)</td>
+                    <td>Captures the image using either area (full image) or linescan (line-by-line) technology, functioning as the "eye" of the system.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Image Processing Hardware/Processor</td>
+                    <td>Analyzes data, including smart cameras, embedded systems, PCs, or DSPs that process the image using algorithms.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Frame Grabber/Digitizer</td>
+                    <td>Captures and converts the analog or digital image from the camera into data for the processor.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Communication/I/O Modules</td>
+                    <td>Interfaces such as PLC, Ethernet, or digital I/O that transmit results to other automation machinery.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Mechanical Components (Staging/Mounting)</td>
+                    <td>Fixtures that holds the part and camera in a precise location</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h3>2.3: The Layers</h3>
+        <br>
+        The figure and table below illustrate and describe the functional layers of a machine vision system in an industrial setting, ordered by the signal flow from the physical object to the final automated action.
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <img src="../assets/images/machine-vision-system-7-layers-01.png" alt="The 7 layers of a Machine Vision System" title="Figure 2: The 7 layers of a typical machine vIsion system." width="400px" height="800px">
+        </div>
+        <br>
+        <div>
+            <table class="modern-table">
+                <tr>
+                    <th>#</th>
+                    <th>Layer</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Industrial Scene</td>
+                    <td>
+                        <ul>
+                            <li>The target object, part, or scene on a production line to be inspected, measured, or identified.</li>
+                            <li>Objective: Gather information about: </li>
+                                <ul class="custom-indent">
+                                    <li>Target object speed, reflectivity, size, tolerance. </li>
+                                    <li>Environmental ambient light, contamination (dust, oil, vibration). </li>
+                                </ul>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Illumination Layer</td>
+                    <td>
+                        <ul>
+                            <li>Specialized lighting (LED, backlight, dome) designed to maximize contrast, minimize shadows, and isolate the features of interest. </li>
+                                <ul class="custom-indent"></ul>
+                                    <li>Objective: Control photons before they enter the lens: </li>
+                                    <li>Lighting defines contrast, signal-to-noise ratio and repeatability.</li>
+                                </ul>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Optical Layer (Lens)</td>
+                    <td>
+                        <ul>
+                            <li>Gathers light from the scene and projects the image onto the camera sensor. Key factors include focal length, aperture, and magnification.</li>
+                            <ul class="custom-indent"></ul>
+                                <li>Lens determines Field of view (FOV), Magnification, Depth of field (DOF), Distortion, Resolution transfer (MTF).</li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sensor Layer (Camera)</td>
+                    <td>
+                        <ul>
+                            <li>Converts the optical image (photons) into an electrical signal. CCD or CMOS sensors are typical, defining the resolution and frame rate.</li>
+                            <ul class="custom-indent"></ul>
+                                <li>Sensor determines Pixel size, Full well capacity, Quantum efficiency, Shutter type, Frame rate, Dynamic range.</li>
+                            </ul>
 
-        <h3>Problem Statement</h3>
-        <p>Describe the engineering challenge.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Interface Layer</td>
+                    <td>
+                        <ul>
+                            <li>The physical connection and protocol used to transmit data from the camera (GigE Vision, USB3 Vision, CoaXPress).</li>
+                            <ul class="custom-indent"></ul>
+                                <li>This layer defines: Bandwidth, Cable length, Latency, Determinism, Power delivery. </li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Acquisition Layer</td>
+                    <td>Frame grabbers or Network Interface Cards (NIC) that receive, buffer, and convert data into a format suitable for the processing unit.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Processing Layer (CPU/GPU/FPGA)</td>
+                    <td>
+                        <ul>
+                            <li>The computing hardware—industrial PC, smart camera processor, or embedded system—that executes algorithms.</li>
+                            <ul class="custom-indent"></ul>
+                                <li>For the processing layer, we need to decide whether to use edge devices, industrial PCs, GPU, FPGA, or AI accelerations.</li>
+                            </ul>
+                        </ul>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Application Layer</td>
+                    <td>Software algorithms (e.g., OCR, pattern matching, blob analysis, AI/Deep Learning) that interpret the image and extract key data.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Decision / Control Layer</td>
+                    <td>
+                        <li>The final stage where the system acts, communicating results to a PLC, Robot, or MES system to accept/reject parts, or guide motion.</li>
+                        <ul class="custom-indent"></ul>
+                                <li>Control Layer involves PLC communication (Profinet / EtherCAT / Modbus), Robot feedback, MES integration.</li>
+                        </ul>
+                    </td>
+                </tr>  
+            </table>
+        </div>
+        <br>
+        <br>
+        <h2>3. Hardware Selection Decision Process</h2>
+        <br>
+        <h3>3.1: Framework</h3>
+        The machine vision hardware selection decision process frame consists of 12 steps, as illustrated in the table below.
+        <br>
+        <div>
+            <table class="modern-table">
+                <tr>
+                    <th>Step</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Description of the Machine Vision Application.</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Define measurement requirements, smallest feature size and tolerance.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Compute required pixel resolution.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Compute Field of View (FOV).</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Select sensor resolution.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Check motion and determine the exposure constraints.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Select shutter type.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Compute lens focal length.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Validate optical resolution vs pixel size.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Select lighting based on surface physics.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Validate interface bandwidth.</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Validate environmental robustness.</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Risk mitigation review.</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h3>3.2 Machine Vision Applications</h3>
+        <br>
+        <h4>3.2.1: Machine Vision Application # 1: Defect Inspection</h4>
+        <br>
+        The Table below illustrates the application of the above 12-step hardware selection decision process for defect inspection machine vision application.  
+        <br>
+        <div>
+            <table class="modern-table">
+                <tr>
+                    <th>Step</th>
+                    <th>Description</th>
+                    <th>Decision making process</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Machine Vision Application</td>
+                    <td>
+                        <li>Inspect a continuously moving steel strip for surface scratches and pits:</li>
+                        <ul class="custom-indent">
+                            <li>Given:</li>
+                                <ul class="custom-indent">
+                                    <li>Strip width: 1.5 meters</li>
+                                    <li>Speed: 3 m/s</li>
+                                    <li>Smallest defect: 0.2 mm</li>
+                                    <li>Required detection confidence: high (industrial QA)</li>
+                                    <li>Environment: hot, dusty, vibrating</li>
+                                    <li>Inspection must be continuous (no missing areas)</li>
+                                </ul>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Determine Required Spatial Resolution</td>
+                    <td>
+                        <li>Smallest defect: 0.2 mm</li>
+                        <li>Industrial best practice:</li>
+                            <ul class="custom-indent">
+                                <li>3 pixels per minimum feature for detection</li>
+                                <li>5 pixels per feature for measurement</li>
+                                <li>We’ll design for detection → 3 pixels.</li>
+                            </ul>
+                        <li>0.20 mm / 3 = 0.067 mm / pixel.</li>
+                        <li>So required spatial sampling: 0.067mm/pixel</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Compute Required Pixels Across Width</td>
+                    <td>
+                        <li>Compute the number of required pixels across the width: </li>
+                            <ul class="custom-indent">
+                                <li>Width = 1500 mm</li>
+                                <li>1500 mm / 0.067 mm / pixel ≈ 22,388 pixels</li>
+                                <li>So we need approximately: 23k pixels across width </li>
+                                <li>This immediately tells us:</li>
+                                    <ul class="custom-indent">
+                                        <li>Area scan is not practical</li>
+                                        <li>We need line scan.</li>
+                                    </ul>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Line Rate Requirement (Motion Constraint)</td>
+                    <td>
+                        <li>Line Rate Requirement (Motion Constraint): </li>
+                            <ul class="custom-indent">
+                                <li>Strip speed = 3 m/s = 3000 mm/s</li>
+                                <li>We need vertical resolution also 0.067 mm/pixel.</li>
+                                <li>So line spacing must equal: 0.067mm </li>
+                                <li>Line rate required = 3000 / 0.067 ≈ 44,776 lines/sec ≈ 45 kHz line rate</li>
+                                <li>This is high-speed industrial inspection.</li>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Exposure Time (Motion Blur)</td>
+                    <td>
+                        <li>Exposure Time (Motion Blur): </li>
+                            <ul class="custom-indent">
+                                <li>Allow blur ≤ 1 pixel (0.067 mm)</li>
+                                <li>Using formula: <em> Blur = Speed × Exposure </em> </li>
+                                <li><em>Exposure ≤ 0.067 / 3000 </em>
+                                <li>Which yields: <em>Exposure ≤ 22 µs </em>
+                                <li>This is extremely short.</li>
+                                <li>Thus:</li>
+                                    <ul class="custom-indent">
+                                        <li>Requires very strong illumination</li>
+                                        <li>Requires high-sensitivity sensor</li>
+                                        <li>Likely requires line scan with TDI if light insufficient.</li>
+                                    </ul>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sensor Choice</td>
+                    <td>
+                        <li>Exposure Time (Motion Blur): </li>
+                            <ul class="custom-indent">
+                                <li>We need:</li>
+                                    <ul class="custom-indent">
+                                        <li>23k pixels horizontal</li>
+                                        <li>45 kHz line rate</li>
+                                        <li>Global shutter equivalent (line scan inherently OK)</li>
+                                        <li>High dynamic range</li>
+                                        <li>High sensitivity at 20 µs exposure</li>
+                                        <li>Industrial solution:</li>
+                                            <ul class="custom-indent">
+                                                <li>Line scan camera, 16k or 24k resolution:</li>
+                                                    <ul class="custom-indent">
+                                                        <li>Candidates:</li>
+                                                            <ul class="custom-indent">
+                                                                <li>16k may be insufficient (16k × 0.067 = 1072 mm coverage only)</li>
+                                                                <li>So we need 23k → choose 24k line scan</li>
+                                                                <li>Typical 24k pixel size ≈ 5 µm</li>
+                                                                    <ul class="custom-indent">
+                                                                        <li>Why use 5 µm pixel?</li>
+                                                                            <ul class="custom-indent">
+                                                                                <li>Tradeoff:</li> 
+                                                                                    <ul class="custom-indent">
+                                                                                        <li>Smaller pixel → less light per pixel</li>
+                                                                                        <li>Exposure only 22 µs → need good SNR</li>
+                                                                                    </ul>
+                                                                                <li>5 µm pixel:</li>
+                                                                                    <ul class="custom-indent">
+                                                                                        <li>Good full well capacity </li>
+                                                                                        <li>Acceptable spatial resolution</li>
+                                                                                        <li>Realistic for 24k sensors.</li>
+                                                                            </ul>
+                                                                    </ul>
+                                                            </ul>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Data Bandwidth</td>
+                    <td>
+                        <li>24,000 pixels × 45,000 lines/sec = 1,080,000,000 pixels/sec  = ≈ 1.08 Gpixels/sec  </li>
+                            <ul class="custom-indent">
+                                <li>At 8 bits/pixel (1 Byte)/pixel): 1.08 GB/s</li>
+                                <li>At 12 bits/pixel (1.5 Byte/pixel): 1.62 GB/s</li>
+                            </ul>
+                        <li>This exceeds GigE and USB3</li>
+                        <li>Therefore:</li>
+                            <ul class="custom-indent">
+                                <li>Use CoaXPress:</li>
+                                    <ul class="custom-indent">
+                                        <li>CoaXPress 2.0 (12.5 Gbps per cable)</li>
+                                    </ul>
+                                <li>Use Multi-link Camera Link HS:</li>
+                                    <ul class="custom-indent">
+                                        <li>12.5 Gbps × 4 = 50 Gbps theoretical</li>
+                                    </ul>
+                                <li>Both of these choise provide us with more than enough margins at 8bits/pixel and 12bits/pixel.</li>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Frame Grabber</td>
+                    <td>
+                        <li>Line scan requires frame grabber because:</li>
+                            <ul class="custom-indent">
+                                <li>Deterministic acquisition</li>
+                                <li>FPGA-based buffering</li>
+                                <li>Real-time defect processing</li>
+                                <li>Precise synchronization.</li>
+                            </ul>
+                        <li>Frame grabber must support:</li>   
+                            <ul class="custom-indent">
+                                <li>4× CoaXPress</li>
+                                <li>DMA transfer</li>
+                                <li>Industrial cooling.</li>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Lens Selection</td>
+                    <td>
+                        <li>Now optical challenge:</li>
+                            <ul class="custom-indent">
+                                <li>We must cover 1.5 m width at given working distance.</li>
+                                <li>Assume working distance = 1 m.</li>
+                                <li>Sensor width:</li>
+                                    <ul class="custom-indent">
+                                        <li>24k pixels × 5 µm = 120 mm sensor width</li>
+                                        <li>Using formula:</li>
+                                            <ul class="custom-indent">
+                                                <li>FocalLength = ( Sensor-Width × Working-Distance ) / FOV =( 120mm ×1 000mm ) / 1500mm = 80 mm lens.</li>
+                                            </ul>
+                                    </ul>
+                                <li>Optical Challenge:</li>
+                                    <ul class="custom-indent">
+                                        <li>120 mm sensor width is large.</li>
+                                        <li>We need:</li>
+                                            <ul class="custom-indent">
+                                                <li>Large format lens</li>
+                                                <li>High MTF at 5 µm pixel pitch</li>
+                                                <li>Low distortion across 1.5 m</li>
+                                                <li>Likely solution:</li>
+                                                    <ul class="custom-indent">
+                                                        <li>Industrial large-format line scan lens</li>
+                                                        <li>Or, we can deploy a multi-camera stitching system.</li>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Illumination Design</td>
+                    <td>
+                        <li>Steel surface:</li>
+                            <ul class="custom-indent">
+                                <li>Reflective</li>
+                                <li>Specular highlights</li>
+                                <li>Possible oxidation</li>
+                                <li>Goal:</li>
+                                    <ul class="custom-indent">
+                                        <li>Highlight surface scratches</li>
+                                        <li>Best illumination:</li>
+                                            <ul class="custom-indent">
+                                                <li>Dark-field linear LED bars</li>
+                                                <li>Opposing angled illumination</li>
+                                                <li>Possibly structured light.</li>
+                                            </ul>
+                                        <li>Why dark field?</li>
+                                            <ul class="custom-indent">
+                                                <li>Scratches scatter light</li>
+                                                <li>Flat surface reflects away</li>
+                                                <li>Defects appear bright.</li>
+                                            </ul>
+                                        <li>Exposure only 22 µs → need:</li>
+                                            <ul class="custom-indent">
+                                                <li>High-power pulsed linear LED</li>
+                                                <li>Possibly water-cooled lighting.</li>
+                                            </ul>
+                                    </ul>
+                            </ul>
 
-        <h3>Methodology</h3>
-        <p>Describe architecture, models, pipeline.</p>
+                    </td>
+                </tr>
 
-        <h3>Technologies Used</h3>
-        <ul>
-            <li>Python</li>
-            <li>OpenCV</li>
-            <li>PyTorch</li>
-        </ul>
+                <tr>
+                    <td>10</td>
+                    <td>Trigger & Synchronization</td>
+                    <td>
+                        <li>Critical:</li>
+                            <ul class="custom-indent">
+                                <li>Line rate must sync with encoder</li>
+                                <li>Use:</li>
+                                    <ul class="custom-indent">
+                                        <li>Conveyor rotary encoder</li>
+                                        <li>Line trigger per encoder pulse.</li>
+                                    </ul>
+                                <li>Why?</li>
+                                    <ul class="custom-indent">
+                                        <li>If speed fluctuates:</li>
+                                            <ul class="custom-indent">
+                                                <li>Fixed 45 kHz line rate will distort aspect ratio.</li>
+                                                <li>Encoder-based triggering ensures:</li>
+                                                    <ul class="custom-indent">
+                                                        <li>Constant spatial sampling independent of speed variation.</li>
+                                                    </ul>
+                                    </ul>
+                            </ul>
+                    </td>
+                </tr>
 
-        <h3>Results</h3>
-        <p>Metrics, accuracy, performance.</p>
+                <tr>
+                    <td>11</td>
+                    <td>Environmental Considerations</td>
+                    <td>
+                        <li>Steel mill:</li>
+                            <ul class="custom-indent">
+                                <li>Heat</li>
+                                <li>Dust</li>
+                                <li>Vibration</li>
+                                <li>EMI.</li>
+                            </ul>
+                        <li>Therefore:</li>
+                            <ul class="custom-indent">
+                                <li>IP65+ enclosure</li>
+                                <li>Air purge window</li>
+                                <li>Heat shielding</li>
+                                <li>Industrial-rated coax cables</li>
+                                <li>Mechanical stiff gantry.</li>
+                            </ul>
+                    </td>
+                </tr>
 
-        <h3>Visual Results</h3>
-        <img src="../assets/images/sample-cv-project-results.png" width = "500px" alt="Project Output">
+                <tr>
+                    <td>12</td>
+                    <td>Major risks</td>
+                    <td>
+                        <li>Insufficient illumination at 22 µs</li>
+                            <ul class="custom-indent">
+                                <li>Insufficient illumination at 22 µs</li>
+                                <li>Optical distortion across 1.5 m</li>
+                                <li>Data bottleneck</li>
+                                <li>Thermal drift</li>
+                                <li>Vibration-induced blur.</li>
+                            </ul>
+                        <li>Mitigation:</li>
+                            <ul class="custom-indent">
+                                <li>Perform photon budget calculation</li> 
+                                <li>MTF via manufacturer data</li> 
+                                <li>Over-spec interface bandwidth</li> 
+                                <li>Use rigid mechanical frame</li> 
+                                <li>Implement encoder-based triggering.</li> 
+                            </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h4>2.2.2: Machine Vision Application # 2: TBD</h4>
+        <br>
+
 
     </section>
 
     </main>
+    <br>
+    <br>
     <br>
     <br>
         <!-- Scroll to the very top of the document -->
