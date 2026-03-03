@@ -1,88 +1,118 @@
-/* === CSS Reset & Base Styles === */
-/* A simple reset for consistency across browsers */
-* {
+/* =========================================================
+   Master Stylesheet: styles.css
+   ---------------------------------------------------------
+   Software Development Bootcamp COurse
+   Assignment # 1: Personal Website
+   ---------------------------------------------------------
+   Student: Mohsen Ghazel
+   Professional Digital Portfolio 
+   =========================================================
+   Structure:
+   ---------------------------------------------------------
+   Part 1  : Global Variables
+   Part 2  : Header
+   Part 3  : Navigation
+   Part 4  : Main Body
+             3.1 Typography
+             3.2 Layout Containers
+             3.3 Sections
+             3.4 Components
+             3.5 Forms
+             3.6 Utilities
+   Part 5  : Footer
+   Part 6  : Media Responsiveness
+   ========================================================= */
+
+/* =========================================================
+   Part 1: GLOBAL VARIABLES
+   ========================================================= */
+
+/* --- Universal Reset --- */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding/border are included in element's total width/height */
+    box-sizing: border-box;
+    min-width: 0; /* Prevents flex/grid overflow */
 }
 
-/* Define CSS variables for easy color changes */
+/* --- Root Design Tokens --- */
 :root {
-    --primary-color: #2008f7; /* Imperial Blue - deep blue for main elements */
-    --accent-color: #0671f4; /* Rich Light Blue - accent color for links/buttons */
-    /*--background-color: #D5F3FE;  Pastel Aqua - light background */
-    --background-color: #cefad0; /* Pastel Aqua - light background */
-    --text-color: #060606; /* Charcoal - for good readability */
-    --white-color: #FFFFFF;
-    --footer-color:#05fa3a;
+    --primary-color: #2008f7;
+    --accent-color: #0671f4;
+    --background-color: #cefad0;
+    --text-color: #060606;
+    --white-color: #ffffff;
+    --border-color: #dddddd;
+    --danger-color: #dc3545;
 }
 
+/* --- Global HTML Behavior --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Base Body --- */
 body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Modern, clean font stack */
+    /* font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
+    /*  TYPOGRAPHY WITH GOOGLE FONTS */
+    font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6; /* Improved readability */
-    padding: 50px;
-    margin: 50px; /* Applies 20px margin to all four sides */
+    line-height: 1.6;
+
+    /* NEW: Safe horizontal spacing */
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-/* === Typography Styles === */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 15px;
-    color: var(--primary-color);
-    line-height: 1.2;
+/* --- Responsive Images --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-h1 {
-    font-size: 2.5rem;
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 10px;
+
+/* =========================================================
+   Part 2: HEADER
+   ========================================================= */
+
+/* Container holding intro text + photo */
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   /* Align photo to top */
+    gap: 40px;
+    flex-wrap: nowrap;         /* Prevent wrapping on desktop */
 }
 
-h2 {
-    font-size: 2rem;
+/* Intro text block */
+.intro-text {
+    flex: 1;                   /* Take remaining space */
 }
 
-p {
-    margin-bottom: 15px;
+/* Profile photo aligned right */
+.intro-photo {
+    width: 220px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    flex-shrink: 0;            /* Prevent shrinking */
 }
 
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth hover effect */
-}
-
-a:hover, a:focus {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-ul, ol {
-    margin-bottom: 15px;
-    margin-left: 20px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-/* === Layout & Component Styles === */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: var(--white-color); /* White main content area for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px;
-}
+/* =========================================================
+   Part 3: NAVIGATION
+   ========================================================= */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--background-color);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
 }
 
 nav .logo {
@@ -95,8 +125,140 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
+/* Anchors/links style  */
+nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+/* Active page highlight */
+nav a.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   Part 4: MAIN BODY
+   ========================================================= */
+/* ---------------------------------------------------------
+   4.1 TYPOGRAPHY
+   --------------------------------------------------------- */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    /* TYPOGRAPHY WITH GOOGLE FONTS */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+/* paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Ordered/un-ordered lists */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+li {
+    margin-bottom: 5px;
+}
+
+/* ---------------------------------------------------------
+   4.2 LAYOUT CONTAINERS
+   --------------------------------------------------------- */
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    padding: 30px;
+
+    background: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   4.3 SECTIONS
+   --------------------------------------------------------- */
+
+/* Section */
+.section {
+    padding: 40px 0;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+/* Projects Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+}
+
+/* Project Card */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ---------------------------------------------------------
+   4.4 COMPONENTS
+   --------------------------------------------------------- */
+
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -105,233 +267,315 @@ nav ul {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
     background-color: var(--primary-color);
+}
+
+/* ---------------------------------------------------------
+   4.5 Table
+   --------------------------------------------------------- */
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;   /* Required for full grid */
+    margin: 30px 0;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.modern-table thead tr {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.modern-table th {
+    padding: 16px 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255,255,255,0.2); /* subtle header grid */
+}
+
+/* Body Cells */
+.modern-table td {
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    /*border: 1px solid #e2e6ed; */ /* full grid borders */
+    border: 1px solid #677aa0;
+}
+
+/* Zebra striping */
+.modern-table tbody tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+/* Row hover */
+.modern-table tbody tr:hover {
+    background-color: #eef3ff;
+    transition: background 0.2s ease;
+}
+
+/* Improve links inside table */
+.modern-table td a {
+    color: var(--primary-color);
+    font-weight: 500;
     text-decoration: none;
 }
 
-/* === Section Styling (Hero, Projects, Contact) === */
-.section {
-    padding: 40px 0;
+.modern-table td a:hover {
+    text-decoration: underline;
 }
 
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: var(--background-color);
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
+/* ---------------------------------------------------------
+   4.6 FORMS
+   --------------------------------------------------------- */
+   /* Note: I used Bootstrap Forms Styles utilities for my Contact Form 
+            - See: contact.html
+    */
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
     background: var(--white-color);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
+
+/* Form title spacing */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Label styling */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Input + Textarea styling */
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #d8dee9;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #f9fbff;
+}
+
+/* Focus state */
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(6, 113, 244, 0.15);
+}
+
+/* Textarea resizing control */
+.form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Error message styling */
+.form-container .error {
+    color: var(--danger-color);
+    font-size: 0.8rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+/* Form-button */
+.form-container button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--white-color);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.form-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Click effect */
+.form-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------------
+   4.7 UTILITIES
+   --------------------------------------------------------- */
+/* Indenting */
+.custom-indent {
+    padding-left: 20px;
+}
+
+/* Back to the Top link */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   Part 5: FOOTER
+   ========================================================= */
 
 footer {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 40px;
     padding-top: 20px;
-    border-top: 2px solid var(--background-color);
+    border-top: 2px solid var(--border-color);
     font-size: 0.9rem;
     color: var(--primary-color);
 }
 
-/*-----------------------------------------------------
-/* Fix Multi-Column Lists for Mobile
-*-----------------------------------------------------*/
-/* This prevents narrow cramped columns on phones. */
-.two-column > ul {
-    column-count: 2;
-}
 
-@media (max-width: 768px) {
-    .two-column > ul {
-        column-count: 1;
+/* =========================================================
+   Part 6: RESPONSIVENESS
+   ========================================================= */
+
+   /* ---------------------------------------------------------
+   6.1 Responsive media
+   --------------------------------------------------------- */
+/* Large Screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
     }
 }
 
-/*-----------------------------------------------------
-/* List custom-indent
-*-----------------------------------------------------*/
-.custom-indent {
-  padding-left: 20px; /* Reduces indentation */
+/* Laptops */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
 }
 
-/* Add border to image */
-img {
-  border: 3px solid #085cef;
+/* Tablets */
+@media (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
 }
 
-/*-----------------------------------------------------
-* Ensure the my name/text on the left and the photo on 
-* the right as two distinct columns. 
-* 
-* - It is often preferred for modern portfolio headers 
-*   to ensure the image and text stay aligned.  
-*-----------------------------------------------------*/
-.intro-container {
-  display: flex; /* Aligns children side-by-side */
-  align-items: center; /* Vertically centers text and photo */
-  justify-content: space-between; /* Pushes text left and photo right */
-  gap: 20px; /* Adds space between text and photo */
+/* Mobile */
+@media (max-width: 768px) {
+
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-.intro-photo {
-  width: 200px; /* Adjust size as needed */
-  height: auto;
-  border-radius: 50%; /* Optional: makes the photo circular */
+/* Small Phones */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
 }
 
-/* Responsive: stack them on mobile */
-@media (max-width: 600px) {
-  .intro-container {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
+/* ---------------------------------------------------------
+   6.2 Responsive Table behavior
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .modern-table thead {
+        display: none;
+    }
+
+    .modern-table,
+    .modern-table tbody,
+    .modern-table tr,
+    .modern-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .modern-table tr {
+        margin-bottom: 15px;
+        background: var(--white-color);
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .modern-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: none;
+    }
+
+    .modern-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: 600;
+        text-align: left;
+        color: var(--primary-color);
+    }
 }
-
-/*-----------------------------------------------------
-* Contact form:
-*-----------------------------------------------------*/
-
-.form-container { 
-    background-color: #fff; 
-    padding: 30px; 
-    border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
-    width: 100%; 
-    max-width: 400px; 
-}
-
-label { 
-    display: block; 
-    margin-bottom: 8px; color: #555; 
-}
-
-input, textarea { 
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 5px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-}
-
-button { 
-    background-color: #007bff; 
-    color: white; 
-    padding: 12px; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer; width: 100%; }
-
-button:hover { 
-    background-color: #0056b3; 
-}
-
-.error { 
-    color: #dc3545; 
-    font-size: 12px; 
-    height: 14px; 
-    margin-bottom: 15px;
- }
-
- /*-----------------------------------------------------
-* Modern table styling
-*-----------------------------------------------------*/
-
- .modern-table {
-  /* Layout and Spacing */
-  width: 100%;
-  /*border-collapse: collapse; Removes double borders */
-  margin: 25px 0; /* Margin around the table itself */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border-radius: 8px; /* Rounded corners for modern look */
-  overflow: hidden; /* Ensures border-radius works on children */
-}
-
-.modern-table caption {
-  caption-side: top; /* Positions caption above the table */
-  text-align: left;
-  padding: 10px 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #333;
-}
-
-.modern-table th,
-.modern-table td {
-  padding: 15px 20px; /* Ample padding for breathing room */
-  text-align: left;
-  border-bottom: 1px solid #ddd; /* Light borders between rows */
-}
-
-/* Header Styling */
-.modern-table thead th {
-  background-color: #007bff; /* Primary color background */
-  color: #ffffff;
-  font-weight: 600;
-  border-bottom: none; /* No extra border on header bottom */
-}
-
-/* Zebra Striping for Readability */
-.modern-table tbody tr:nth-child(even) {
-  background-color: #f8f9fa; /* Lighter background for even rows */
-}
-
-.modern-table tbody tr:hover {
-  background-color: #e9ecef; /* Hover effect for interactivity */
-  cursor: pointer;
-}
-
-/* Remove border from the last row for a cleaner end */
-.modern-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-table,
-th,
-td {
-  border: 1px solid rgb(0, 4, 255); /* Sets the border width, style, and color */
-}
-
-
-/* Smooth Scrolling with CSS: */
-/* - To make the transition smooth rather than an instant jump, add the scroll-behavior property to your CSS. */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Fix to the Bottom-Right */
-/* - For a persistent button that stays in the corner as you scroll, use position: fixed and set right and bottom offsets. */
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000; /* Keeps it above other content */
-}
-
-
-/*  Highlighting the Link to the Current Page */
-a.active {
-  background-color: #00fb08;
-  color: #0b0b0b;
-}
-
-/* === Accessibility & Responsiveness === */
-/* Ensure sufficient contrast for readability */
-/* Consider media queries for smaller devices to adjust layout */
-

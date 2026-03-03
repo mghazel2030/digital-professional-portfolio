@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Professional Experience | Mohsen Ghazel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- My Styles Sheet-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -50,111 +57,122 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Imaging System Hardware</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Investigated, evaluated and demonstrated the optimal selection of automobile inspection machine vision system hardware, including: </li>
-                                    <ul class="custom-indent">
-                                        <li>Illumination/light sources </li>
-                                        <li>Sensors/cameras and their adaptive ISP pipelines including auto exposure settings</li>
-                                        <li>Optics/lenses. </li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Conventional Computer Vision</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Image quality enhancement:</li>
-                                    <ul class="custom-indent">
-                                        <li>Contrast Enhancement</li>
-                                        <li>Noise Reduction </li>
-                                        <li>Sharpening</li>
-                                        <li>Low-Light Enhancement</li>
-                                        <li>Glare-reduction</li>
-                                    </ul>
-
-                                <li>Background estimation:</li>
-                                    <ul class="custom-indent">
-                                        <li>Detecting change-free frames</li>
-                                        <li>Adaptive averaging of change-free frames</li>
-                                        <li>Generate a continuously updated background frame to be used for background subtraction and change detection.</li>
-                                    </ul>
-
-                                <li>Vehicle Analysis & Tracking:</li>
-                                    <ul class="custom-indent">
-                                        <li>Object detection using: </li>
-                                            <ul class="custom-indent">
-                                                <li> Background subtraction </li>
-                                                <li> Adaptive thresholding </li>
-                                                <li> Morphological operations </li>
-                                                <li> Template matching.</li>
-                                        <li>Object tracking using OpenCV:</li>
-                                            <ul class="custom-indent">
-                                                <li>MeanShift</li>
-                                                <li>CamShift</li>
-                                                <li>MedianFlow</li>
-                                                <li>KCF</li>
-                                                <li>BOOSTING</li>
-                                            </ul>
-                                    </ul>
-
-                                <li>Multi-view Geometry</li>
-                                    <ul class="custom-indent">
-                                        <li>Multi-camera videos synchronization</li>
-                                        <li>Multi-camera frames projection and registration</li>
-                                        <li>Localization of damage/features on vehicle body </li> 
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Machine & Deep Learning</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Training, fine-tuning, adapting, evaluating and deploying object detection models to detect different types of damages (small/large dents and scratches) as well as car-boy exterior features (car-door handle, mirror, wheel, bumper, etc.), using various deep learning frameworks: </li>
-                                    <ul class="custom-indent">
-                                        <li>TensorFlow Object Detection API</li>
-                                        <li>Hailo AI Object Detection</li>
-                                        <li>Ultralytics YOLO</li>
-                                        <li> Amazon SageMaker AI Object Detection - MXNet</li>
-                                    </ul>
-                                <li>Training, fine-tuning, adapting, evaluating and deploying object detection models for face detection and masking for privacy & security: </li>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Imaging System Hardware</td> 
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>AWS Rekognition face detection API</li>
-                                    <li>Driver/passenger privacy masking, automatic window detection and blurring.</li>
+                                    <li>Investigated, evaluated and demonstrated the optimal selection of automobile inspection machine vision system hardware, including: </li>
+                                        <ul class="custom-indent">
+                                            <li>Illumination/light sources </li>
+                                            <li>Sensors/cameras and their adaptive ISP pipelines including auto exposure settings</li>
+                                            <li>Optics/lenses. </li>
+                                        </ul>
                                 </ul>
-                            </ul>
-                        </td>     
-                    </tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Python, C++, OpenCV, Scikit-learn, Scikit-Image, MATLAB.</li>
-                                <li>TensorFlow, PyTorch, AWS SageMaker</li>
-                                <li>BitBucket. </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>System Integration & Deployment</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Integrated developed computer vision pipelines in BODYGUARD: </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Conventional Computer Vision</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Image quality enhancement:</li>
+                                        <ul class="custom-indent">
+                                            <li>Contrast Enhancement</li>
+                                            <li>Noise Reduction </li>
+                                            <li>Sharpening</li>
+                                            <li>Low-Light Enhancement</li>
+                                            <li>Glare-reduction</li>
+                                        </ul>
+
+                                    <li>Background estimation:</li>
+                                        <ul class="custom-indent">
+                                            <li>Detecting change-free frames</li>
+                                            <li>Adaptive averaging of change-free frames</li>
+                                            <li>Generate a continuously updated background frame to be used for background subtraction and change detection.</li>
+                                        </ul>
+
+                                    <li>Vehicle Analysis & Tracking:</li>
+                                        <ul class="custom-indent">
+                                            <li>Object detection using: </li>
+                                                <ul class="custom-indent">
+                                                    <li> Background subtraction </li>
+                                                    <li> Adaptive thresholding </li>
+                                                    <li> Morphological operations </li>
+                                                    <li> Template matching.</li>
+                                            <li>Object tracking using OpenCV:</li>
+                                                <ul class="custom-indent">
+                                                    <li>MeanShift</li>
+                                                    <li>CamShift</li>
+                                                    <li>MedianFlow</li>
+                                                    <li>KCF</li>
+                                                    <li>BOOSTING</li>
+                                                </ul>
+                                        </ul>
+
+                                    <li>Multi-view Geometry</li>
+                                        <ul class="custom-indent">
+                                            <li>Multi-camera videos synchronization</li>
+                                            <li>Multi-camera frames projection and registration</li>
+                                            <li>Localization of damage/features on vehicle body </li> 
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">Machine & Deep Learning</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Training, fine-tuning, adapting, evaluating and deploying object detection models to detect different types of damages (small/large dents and scratches) as well as car-boy exterior features (car-door handle, mirror, wheel, bumper, etc.), using various deep learning frameworks: </li>
+                                        <ul class="custom-indent">
+                                            <li>TensorFlow Object Detection API</li>
+                                            <li>Hailo AI Object Detection</li>
+                                            <li>Ultralytics YOLO</li>
+                                            <li> Amazon SageMaker AI Object Detection - MXNet</li>
+                                        </ul>
+                                    <li>Training, fine-tuning, adapting, evaluating and deploying object detection models for face detection and masking for privacy & security: </li>
                                     <ul class="custom-indent">
-                                        <li>Automobile exterior body machine vision inspection system</li>
-                                        <li>Near real-time performance</li>
-                                        <li>System maintenance, troubleshooting, robustness to environmental variations.</li>
+                                        <li>AWS Rekognition face detection API</li>
+                                        <li>Driver/passenger privacy masking, automatic window detection and blurring.</li>
                                     </ul>
-                            </ul>
-                        </td>
-                    <tr>
+                                </ul>
+                            </td>     
+                        </tr>
+                        <tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Python, C++, OpenCV, Scikit-learn, Scikit-Image, MATLAB.</li>
+                                    <li>TensorFlow, PyTorch, AWS SageMaker</li>
+                                    <li>BitBucket. </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">5</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Integrated developed computer vision pipelines in BODYGUARD: </li>
+                                        <ul class="custom-indent">
+                                            <li>Automobile exterior body machine vision inspection system</li>
+                                            <li>Near real-time performance</li>
+                                            <li>System maintenance, troubleshooting, robustness to environmental variations.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -169,78 +187,86 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Conventional Computer Vision</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Image quality enhancement:</li>
-                                    <ul class="custom-indent">
-                                        <li>Adaptive noise reduction:</li>
-                                            <ul class="custom-indent">
-                                                <li>Non-local means filter </li>
-                                                <li>Bilateral filter </li> 
-                                                <li> Adaptive edge-preserving de-noising filters.</li>
-                                            </ul>
-                                        <li>Contrast enhancement:</li>
-                                            <ul class="custom-indent">
-                                                <li>Brightness estimation and quality assessment</li>
-                                                <li>Adaptive brightness and contrast enhancement (CLAHE).</li>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Conventional Computer Vision</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Image quality enhancement:</li>
+                                        <ul class="custom-indent">
+                                            <li>Adaptive noise reduction:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Non-local means filter </li>
+                                                    <li>Bilateral filter </li> 
+                                                    <li> Adaptive edge-preserving de-noising filters.</li>
+                                                </ul>
+                                            <li>Contrast enhancement:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Brightness estimation and quality assessment</li>
+                                                    <li>Adaptive brightness and contrast enhancement (CLAHE).</li>
+                                        </ul>
                                     </ul>
+                                    <li>Registration of SEM/TEM stacks of images:</li>
+                                        <ul class="custom-indent">
+                                            <li>OpenCV feature-based registration:</li>
+                                                <ul class="custom-indent"></ul>
+                                                    <li>SIFT, ORB, SURF features detection and extraction</li>
+                                                    <li>Homography matrix estimation</li>
+                                                    <li>Projection and warping.</li>
+                                                </ul>
+                                            <li>Scikit-Image registration tools:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Correlation-based registration</li>
+                                                    <li>Optical flow registration</li>
+                                                </ul>
+                                            <li>ITK registration algorithms:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Rigid registrations tools</li>
+                                                    <li>Non-rigid registrations tools.</li>
+                                                </ul>
+                                    <li>Features Detection:</li>
+                                        <ul class="custom-indent">
+                                            <li>Detect features from primary image using multi-scale template matching</li>
+                                            <li>Projection of primary-image detected features to registered stack of secondary images.</li>
+                                        </ul>
+                                    <li>Feature-Measurements Estimation::</li>
+                                        <ul class="custom-indent">
+                                            <li>Estimation of detected features measurements from primary image </li>
+                                            <li>Projection of estimated measurements of the primary-image detected features to registered stack of secondary images.</li>
+                                        </ul>
                                 </ul>
-                                <li>Registration of SEM/TEM stacks of images:</li>
-                                    <ul class="custom-indent">
-                                        <li>OpenCV feature-based registration:</li>
-                                            <ul class="custom-indent"></ul>
-                                                <li>SIFT, ORB, SURF features detection and extraction</li>
-                                                <li>Homography matrix estimation</li>
-                                                <li>Projection and warping.</li>
-                                            </ul>
-                                        <li>Scikit-Image registration tools:</li>
-                                            <ul class="custom-indent">
-                                                <li>Correlation-based registration</li>
-                                                <li>Optical flow registration</li>
-                                            </ul>
-                                        <li>ITK registration algorithms:</li>
-                                            <ul class="custom-indent">
-                                                <li>Rigid registrations tools</li>
-                                                <li>Non-rigid registrations tools.</li>
-                                            </ul>
-                                <li>Features Detection:</li>
-                                    <ul class="custom-indent">
-                                        <li>Detect features from primary image using multi-scale template matching</li>
-                                        <li>Projection of primary-image detected features to registered stack of secondary images.</li>
-                                    </ul>
-                                <li>Feature-Measurements Estimation::</li>
-                                    <ul class="custom-indent">
-                                        <li>Estimation of detected features measurements from primary image </li>
-                                        <li>Projection of estimated measurements of the primary-image detected features to registered stack of secondary images.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <td>Software Development</td>
-                    <td>
-                        <ul class="custom-indent">
-                            <li>Python, C++, OpenCV (Python and C++ API), Scikit-learn, Scikit-Image (Image registration: Correlation-based, Optical-Flow), Insight Toolkit (ITK) pre-processing, non-rigid registration, segmentation and visualization tools (SimpleITK, SimpleElastic), MATLAB, SVN (version control).</li>
-                        </ul>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>System Integration & Deployment</td>
-                        <td>
+                            </td>
+                        </tr>
+                        <td data-label="#">2</td> 
+                        <td data-label="Category">Software Development</td>
+                        <td data-label="Skills">
                             <ul class="custom-indent">
-                                <li>Integration of developed CV pipelines and tools into the QUATRTZ PCI system:</li>
-                                    <ul class="custom-indent">
-                                        <li>Microscope image acquisition, processing, archiving and measurement software</li>
-                                        <li>Integration, deployment, testing, trouble-shooting and maintenance.</li>
-                                    </ul>
+                                <li>Python, C++, OpenCV (Python and C++ API), Scikit-learn, Scikit-Image (Image registration: Correlation-based, Optical-Flow), Insight Toolkit (ITK) pre-processing, non-rigid registration, segmentation and visualization tools (SimpleITK, SimpleElastic), MATLAB, SVN (version control).</li>
                             </ul>
                         </td>
-                    <tr>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Integration of developed CV pipelines and tools into the QUATRTZ PCI system:</li>
+                                        <ul class="custom-indent">
+                                            <li>Microscope image acquisition, processing, archiving and measurement software</li>
+                                            <li>Integration, deployment, testing, trouble-shooting and maintenance.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -255,133 +281,144 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Image System Hardware</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive camera ISP pipeline, including _color correction and exposure settings_.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                        <td>Conventional Computer Vision Pipelines</td> 
-                        <td>
-                            <ul class="custom-indent">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Image System Hardware</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive camera ISP pipeline, including _color correction and exposure settings_.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Conventional Computer Vision Pipelines</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
 
-                                <li>Image quality enhancement:</li> 
-                                    <ul class="custom-indent">
-                                        <li>Brightness estimation and quality assessment (Brightness histograms statistics)</li>
-                                        <li>Adaptive brightness and contrast enhancement (Contrast-Limited Histogram Equalization - CLAHE)</li>
-                                        <li>Integration of algorithms into the camera ISP pipeline for adaptive exposure and color correction settings. </li>
-                                    </ul>
+                                    <li>Image quality enhancement:</li> 
+                                        <ul class="custom-indent">
+                                            <li>Brightness estimation and quality assessment (Brightness histograms statistics)</li>
+                                            <li>Adaptive brightness and contrast enhancement (Contrast-Limited Histogram Equalization - CLAHE)</li>
+                                            <li>Integration of algorithms into the camera ISP pipeline for adaptive exposure and color correction settings. </li>
+                                        </ul>
 
-                                <li>Core box imagery perspective correction:</li>
-                                    <ul class="custom-indent">
-                                        <li>Detection of corresponding source and destination points</li>
-                                        <li>Transformation matrix estimation and application.</li>
-                                        <li>Perspective correction and alignment using OpenCV algorithms.</li>
-                                    </ul>
+                                    <li>Core box imagery perspective correction:</li>
+                                        <ul class="custom-indent">
+                                            <li>Detection of corresponding source and destination points</li>
+                                            <li>Transformation matrix estimation and application.</li>
+                                            <li>Perspective correction and alignment using OpenCV algorithms.</li>
+                                        </ul>
 
-                                <li>Core box segmentation:</li>
-                                    <ul class="custom-indent">
-                                        <li>Edge detection, Hough lines detection, Harris corners detection and color-based segmentation</li>
-                                        <li>Segmentation of the content of each core-row into solid-core, broken core, gaps.</li>
-                                    </ul>
+                                    <li>Core box segmentation:</li>
+                                        <ul class="custom-indent">
+                                            <li>Edge detection, Hough lines detection, Harris corners detection and color-based segmentation</li>
+                                            <li>Segmentation of the content of each core-row into solid-core, broken core, gaps.</li>
+                                        </ul>
 
-                                <li>Core depth and measurements estimation:</li>
-                                    <ul class="custom-indent">
-                                        <li>Based on core box segmentation and classification</li>
-                                        <li>Measurement marking meta-data.</li>
-                                    </ul>
+                                    <li>Core depth and measurements estimation:</li>
+                                        <ul class="custom-indent">
+                                            <li>Based on core box segmentation and classification</li>
+                                            <li>Measurement marking meta-data.</li>
+                                        </ul>
 
-                                <li>Detection of hand-written text and graphics on core and box:</li>
-                                    <ul class="custom-indent">
-                                        <li>Color-segmentation, adaptive thresholding, morphological filtering, easy-ocr text detection.</li>
-                                        <li>Contrast enhancement of detected potential hand-written text-ROI sub-images.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
+                                    <li>Detection of hand-written text and graphics on core and box:</li>
+                                        <ul class="custom-indent">
+                                            <li>Color-segmentation, adaptive thresholding, morphological filtering, easy-ocr text detection.</li>
+                                            <li>Contrast enhancement of detected potential hand-written text-ROI sub-images.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Machine & Deep Learning</td>
-                        <td>
-                            <ul class="custom-indent">
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">Machine & Deep Learning</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
 
-                                <li>Exploring the core classification class-imbalance: </li>
-                                    <ul class="custom-indent">
-                                        <li>Training data pre-processing for imbalanced classification: </li>
-                                            <ul class="custom-indent">
-                                                <li>Under-sampling</li>
-                                                <li>Over-sampling</li>
-                                                <li>Synthetic Minority Oversampling Technique (SMOTE).</li>
-                                            </ul>
-                                    </ul>
+                                    <li>Exploring the core classification class-imbalance: </li>
+                                        <ul class="custom-indent">
+                                            <li>Training data pre-processing for imbalanced classification: </li>
+                                                <ul class="custom-indent">
+                                                    <li>Under-sampling</li>
+                                                    <li>Over-sampling</li>
+                                                    <li>Synthetic Minority Oversampling Technique (SMOTE).</li>
+                                                </ul>
+                                        </ul>
 
-                                <li>Developing, fine-tuning, adapting, evaluating and deploying machine learning classification models suitable for imbalanced numerical data: </li>
-                                    <ul class="custom-indent">
-                                        <li>Tree-based ensemble learning models (Random Forests)</li>
-                                        <li>Gradient Boosting Machines (XGBoost, LightGBM, CatBoost)</li>
-                                        <li>Support Vector Machines (SVMs).</li>
-                                    </ul>
+                                    <li>Developing, fine-tuning, adapting, evaluating and deploying machine learning classification models suitable for imbalanced numerical data: </li>
+                                        <ul class="custom-indent">
+                                            <li>Tree-based ensemble learning models (Random Forests)</li>
+                                            <li>Gradient Boosting Machines (XGBoost, LightGBM, CatBoost)</li>
+                                            <li>Support Vector Machines (SVMs).</li>
+                                        </ul>
 
-                                <li>Defining and computing performance metrics suitable for imbalanced classification:</li>
-                                    <ul class="custom-indent">
-                                        <li>Confusion Matrix</li>
-                                        <li>Precision vs. Recall</li>
-                                        <li>F1-score</li>
-                                        <li>Balanced-accuracy</li>
-                                        <li>Area under the receiver operating characteristic Curve (AUC-ROC)</li>
-                                    </ul>
+                                    <li>Defining and computing performance metrics suitable for imbalanced classification:</li>
+                                        <ul class="custom-indent">
+                                            <li>Confusion Matrix</li>
+                                            <li>Precision vs. Recall</li>
+                                            <li>F1-score</li>
+                                            <li>Balanced-accuracy</li>
+                                            <li>Area under the receiver operating characteristic Curve (AUC-ROC)</li>
+                                        </ul>
 
-                                <li>Ore-veins detection and quantification:</li>
-                                    <ul class="custom-indent">
-                                        <li>Implemented the full Machine Learning Life Cycle (MLLC):</li>
-                                            <ul class="custom-indent">
-                                                <li>Ore-veins annotation using VIA annotation tool </li>
-                                            </ul>
-                                        <li>Fine-tuning and evaluating the Mask-RCNN object detection model from TensorFlow Object Detection API repository: </li>
-                                            <ul class="custom-indent">
-                                                <li>Demonstrated performance on large test dataset.</li>
-                                                <li>Presented results to customers.</li>
-                                            </ul>
-                                    </ul>
+                                    <li>Ore-veins detection and quantification:</li>
+                                        <ul class="custom-indent">
+                                            <li>Implemented the full Machine Learning Life Cycle (MLLC):</li>
+                                                <ul class="custom-indent">
+                                                    <li>Ore-veins annotation using VIA annotation tool </li>
+                                                </ul>
+                                            <li>Fine-tuning and evaluating the Mask-RCNN object detection model from TensorFlow Object Detection API repository: </li>
+                                                <ul class="custom-indent">
+                                                    <li>Demonstrated performance on large test dataset.</li>
+                                                    <li>Presented results to customers.</li>
+                                                </ul>
+                                        </ul>
 
-                                <li>Hand-written text detection using Amazon AWS Textract OCR models:</li>
-                                    <ul class="custom-indent">
-                                        <li>Processing the detected and enhanced text-ROI sub-images using cloud-based OCR algorithms</li>
-                                        <li>Parsing and validating the OCR results and extract the desired core-information meta-data.</li>
-                                    </ul>
+                                    <li>Hand-written text detection using Amazon AWS Textract OCR models:</li>
+                                        <ul class="custom-indent">
+                                            <li>Processing the detected and enhanced text-ROI sub-images using cloud-based OCR algorithms</li>
+                                            <li>Parsing and validating the OCR results and extract the desired core-information meta-data.</li>
+                                        </ul>
 
-                            </ul>
-                        </td>     
-                    </tr>
+                                </ul>
+                            </td>     
+                        </tr>
 
-                    </tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Python, C++, OpenCV (Python and C++ API), TensorFlow, PyTorch, AWS Sage Maker (data annotation, model training, fine-tuning, testing and performance evaluation), Scikit-learn, Scikit-Image,  MATLAB, BitBucket (version control), VIA Annotation Tool (data annotation).</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>System Integration & Deployment</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Integration of developed CV pipelines and tools into the SPECTOR-GEO software:</li>
-                                    <ul class="custom-indent">
-                                        <li>An integrated technology platform designed for geological core logging and analysis</li>
-                                        <li>Near real-time performance, robust to real-world data variations</li>
-                                        <li>Development, integration, deployment, testing, trouble-shooting and maintenance.</li>
-                                    </ul>
-                            </ul>
+                        </tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Python, C++, OpenCV (Python and C++ API), TensorFlow, PyTorch, AWS Sage Maker (data annotation, model training, fine-tuning, testing and performance evaluation), Scikit-learn, Scikit-Image,  MATLAB, BitBucket (version control), VIA Annotation Tool (data annotation).</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">5</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Integration of developed CV pipelines and tools into the SPECTOR-GEO software:</li>
+                                        <ul class="custom-indent">
+                                            <li>An integrated technology platform designed for geological core logging and analysis</li>
+                                            <li>Near real-time performance, robust to real-world data variations</li>
+                                            <li>Development, integration, deployment, testing, trouble-shooting and maintenance.</li>
+                                        </ul>
+                                </ul>
 
-                        </td>
-                    <tr>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -397,100 +434,109 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Image System Hardware</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive cameras ISP pipeline to optimize and automate exposure and color-correction settings.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                    <td>Conventional Computer Vision Pipelines</td> 
-                    <td>
-                        <ul class="custom-indent">
-
-                            <li>Image quality enhancement:</li>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Image System Hardware</td> 
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>Adaptive noise reduction (non-local means filter, bilateral filter, etc.)</li>
-                                    <li>Brightness assessment (Brightness histograms statistics)</li>
-                                    <li>Adaptive brightness and contrast enhancement (Contrast-Limited Histogram Equalization) </li>
-                                    <li>Integrated developed image enhancement algorithms into the camera ISP pipeline to ensure high quality of the acquired imagery adaptively under different illumination conditions. </li>
+                                    <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive cameras ISP pipeline to optimize and automate exposure and color-correction settings.</li>
                                 </ul>
-
-                            <li>Plant detection:</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Conventional Computer Vision Pipelines</td> 
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>Color-based image segmentation </li>
-                                    <li>Adaptive thresholding, morphological operations, segmentation, etc.</li>
-                                </ul>
 
-                            <li>Registration of the time series of plant-images:</li>
-                                <ul class="custom-indent">
-                                    <li>OpenCV feature-based registration algorithms and tools:</li>
+                                    <li>Image quality enhancement:</li>
                                         <ul class="custom-indent">
-                                            <li>SIFT, ORB, SURF features detection and extraction</li>
-                                            <li>Homography matrix estimation, projection and warping</li>
+                                            <li>Adaptive noise reduction (non-local means filter, bilateral filter, etc.)</li>
+                                            <li>Brightness assessment (Brightness histograms statistics)</li>
+                                            <li>Adaptive brightness and contrast enhancement (Contrast-Limited Histogram Equalization) </li>
+                                            <li>Integrated developed image enhancement algorithms into the camera ISP pipeline to ensure high quality of the acquired imagery adaptively under different illumination conditions. </li>
                                         </ul>
-                                    <li>Scikit-Image registration algorithms and tools:</li>
+
+                                    <li>Plant detection:</li>
                                         <ul class="custom-indent">
-                                            <li>Correlation-based registration</li>
-                                            <li>Optical flow registration</li>
+                                            <li>Color-based image segmentation </li>
+                                            <li>Adaptive thresholding, morphological operations, segmentation, etc.</li>
                                         </ul>
-                                    <li>Insight Toolkit (ITK) registration algorithms and tools:</li>
+
+                                    <li>Registration of the time series of plant-images:</li>
                                         <ul class="custom-indent">
-                                            <li>Rigid registration</li>
-                                            <li>Non-rigid registration.</li>
+                                            <li>OpenCV feature-based registration algorithms and tools:</li>
+                                                <ul class="custom-indent">
+                                                    <li>SIFT, ORB, SURF features detection and extraction</li>
+                                                    <li>Homography matrix estimation, projection and warping</li>
+                                                </ul>
+                                            <li>Scikit-Image registration algorithms and tools:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Correlation-based registration</li>
+                                                    <li>Optical flow registration</li>
+                                                </ul>
+                                            <li>Insight Toolkit (ITK) registration algorithms and tools:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Rigid registration</li>
+                                                    <li>Non-rigid registration.</li>
+                                                </ul>
+                                        </ul>
+
+                                    <li>Background estimation from images time-series:</li>
+                                        <ul class="custom-indent">
+                                            <li>Detecting change-free frames</li>
+                                            <li>Cumulative averaging</li>
+                                            <li>Adaptive averaging over regions of no change</li>
+                                            <li>Min/Max operators</li>
+                                            <li>Generate a continuously updated background frame to be used for background subtraction and change detection. </li>
+                                        </ul>
+
+                                    <li>Plant growth detection and quantification:</li>
+                                        <ul class="custom-indent">
+                                            <li>Adaptive change detection</li>
+                                            <li>Background subtraction</li>
+                                            <li>Filtering the illumination effects from the detected changes.</li>
+                                        </ul>
+
+                                    <li>Damage quantification over time::</li>
+                                        <ul class="custom-indent">
+                                            <li>Cumulative detected changes generated from the time-series of images of each plant.</li>
                                         </ul>
                                 </ul>
-
-                            <li>Background estimation from images time-series:</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>Detecting change-free frames</li>
-                                    <li>Cumulative averaging</li>
-                                    <li>Adaptive averaging over regions of no change</li>
-                                    <li>Min/Max operators</li>
-                                    <li>Generate a continuously updated background frame to be used for background subtraction and change detection. </li>
+                                    <li>Python, C++, OpenCV (Python and C++ API), Scikit-learn, Scikit-Image (Image registration: Correlation-based, Optical-Flow),  Insight Toolkit (ITK) registration non-rigid registration (SimpleITK, SimpleElastic), MATLAB, SVN (version control).</li>
                                 </ul>
-
-                            <li>Plant growth detection and quantification:</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>Adaptive change detection</li>
-                                    <li>Background subtraction</li>
-                                    <li>Filtering the illumination effects from the detected changes.</li>
+                                    <li>Integration of developed CV pipelines and tools into the plant health monitoring and inspection system:</li>
+                                        <ul class="custom-indent">
+                                            <li>Near-real-time performance</li>
+                                            <li>Robust to real-world data variations</li>
+                                            <li>Development, integration, deployment, testing, trouble-shooting and maintenance.</li>
+                                        </ul>
                                 </ul>
-
-                            <li>Damage quantification over time::</li>
-                                <ul class="custom-indent">
-                                    <li>Cumulative detected changes generated from the time-series of images of each plant.</li>
-                                </ul>
-                        </ul>
-                    </td>
-                    </tr>
-                    </tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Python, C++, OpenCV (Python and C++ API), Scikit-learn, Scikit-Image (Image registration: Correlation-based, Optical-Flow),  Insight Toolkit (ITK) registration non-rigid registration (SimpleITK, SimpleElastic), MATLAB, SVN (version control).</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>System Integration & Deployment</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Integration of developed CV pipelines and tools into the plant health monitoring and inspection system:</li>
-                                    <ul class="custom-indent">
-                                        <li>Near-real-time performance</li>
-                                        <li>Robust to real-world data variations</li>
-                                        <li>Development, integration, deployment, testing, trouble-shooting and maintenance.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    <tr>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -507,108 +553,120 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Image System Hardware</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive ISP pipelines to optimize and automate exposure settings.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>High-resolution Image Processing Algorithms</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Noise reduction </li>
-                                <li>Glare and shadow detection and reduction  </li>
-                                <li>Contrast enhancement.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3D Point-cloud Data Processing</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Reducing distortion and misalignment</li>
-                                <li>Detecting local shelf-planes </li>
-                                <li>Detecting product spaces and out-of-stock gaps associated with price labels </li>
-                                <li>Registering the 3D point cloud with the corresponding 2D high resolution images.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <td>Machine & Deep Learning Models</td> 
-                    <td>
-                        <ul class="custom-indent">
-                            <li>Fine-tuning various deep learning models to detect various objects of interest:</li>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Image System Hardware</td> 
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>Price labels, shelves, product-gaps, others</li>
-                                    <li>TensorFlow Object Detection API repository: </li>
-                                        <ul class="custom-indent">
-                                            <li>SSDMobileNet, Faster-RCNN, Mask-RCNN</li>
-                                        </ul>
-                                    <li>YOLO.</li>
+                                    <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive ISP pipelines to optimize and automate exposure settings.</li>
                                 </ul>
-                            <li>Segmenting and classifying wide field-of-view (FOV) scenes of shelf aisles:</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">High-resolution Image Processing Algorithms</td> 
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>Based on the types of products on the shelves:</li>
+                                    <li>Noise reduction </li>
+                                    <li>Glare and shadow detection and reduction  </li>
+                                    <li>Contrast enhancement.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">3D Point-cloud Data Processing</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Reducing distortion and misalignment</li>
+                                    <li>Detecting local shelf-planes </li>
+                                    <li>Detecting product spaces and out-of-stock gaps associated with price labels </li>
+                                    <li>Registering the 3D point cloud with the corresponding 2D high resolution images.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">Machine & Deep Learning Models</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Fine-tuning various deep learning models to detect various objects of interest:</li>
                                         <ul class="custom-indent">
-                                            <li>Sdry foods, bottled drinks, dairy products, frozen foods, meats, etc.</li>
-                                        </ul>
-                                    <li>Conducting an end-to-end Machine Learning Life Cycle (MLLC):</li>
-                                        <ul class="custom-indent">
-                                            <li>Data acquisition, preparation, annotation and formatting </li> 
-                                            <li>DL model selection, fine-tuning and training</li>
-                                            <li>Trained model deployment, evaluation in terms of accuracy: </li>
+                                            <li>Price labels, shelves, product-gaps, others</li>
+                                            <li>TensorFlow Object Detection API repository: </li>
                                                 <ul class="custom-indent">
-                                                    <li>Trade-off (PR and ROC curves)</li>
-                                                    <li>Computational complexity and scalability </li>
-                                                    <li>Deployment on mobile systems using OpenVINO, Intel Neural Compute.</li>
+                                                    <li>SSDMobileNet, Faster-RCNN, Mask-RCNN</li>
+                                                </ul>
+                                            <li>YOLO.</li>
+                                        </ul>
+                                    <li>Segmenting and classifying wide field-of-view (FOV) scenes of shelf aisles:</li>
+                                        <ul class="custom-indent">
+                                            <li>Based on the types of products on the shelves:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Sdry foods, bottled drinks, dairy products, frozen foods, meats, etc.</li>
+                                                </ul>
+                                            <li>Conducting an end-to-end Machine Learning Life Cycle (MLLC):</li>
+                                                <ul class="custom-indent">
+                                                    <li>Data acquisition, preparation, annotation and formatting </li> 
+                                                    <li>DL model selection, fine-tuning and training</li>
+                                                    <li>Trained model deployment, evaluation in terms of accuracy: </li>
+                                                        <ul class="custom-indent">
+                                                            <li>Trade-off (PR and ROC curves)</li>
+                                                            <li>Computational complexity and scalability </li>
+                                                            <li>Deployment on mobile systems using OpenVINO, Intel Neural Compute.</li>
+                                                </ul>
                                         </ul>
                                 </ul>
-                        </ul>
-                    </tr>
-                    </tr>
-                    <td>Software Development</td>
-                    <td>
-                        <ul class="custom-indent">
-                            <li>Python, C++, OpenCV (Python and C++ API), TensorFlow, PyTorch, AWS Sage Maker (data annotation, model training, fine-tuning, testing and performance evaluation), Scikit-learn, Scikit-Image,  MATLAB, BitBucket (version control), VIA Annotation Tool (data annotation).</li>
-                        </ul>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>System Integration & Deployment</td>
-                    <td>
-                        <ul class="custom-indent">
-                            <li>Integration of developed CV pipelines and tools into retail-stores monitoring and analytics robotic system:</li>
+                            </td>
+                        </tr>
+                        </tr>
+                        <td data-label="#">5</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>Zebra Technologies EMA50 (Enterprise Mobile Automation), an autonomous scanning robot designed for front-of-store inventory monitoring</li>
-                                    <li>Near-real-time performance, robust to real-world data variations</li>
-                                    <li>Development, integration, deployment, testing, trouble-shooting and maintenance.</li>
+                                    <li>Python, C++, OpenCV (Python and C++ API), TensorFlow, PyTorch, AWS Sage Maker (data annotation, model training, fine-tuning, testing and performance evaluation), Scikit-learn, Scikit-Image,  MATLAB, BitBucket (version control), VIA Annotation Tool (data annotation).</li>
                                 </ul>
-                        </ul>
-                    </td>
-                    <tr>
-
-                    <tr>
-                    <td>Patents</td>
-                    <td>
-                        <ul class="custom-indent">
-                            <li><a href="https://patents.justia.com/patent/20200380317/">Method, System and Apparatus for Gap Detection in Support Structures with Peg Regions:</a></li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">6</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
-                                    <li>U.S. Patent and Trademark Office under Application No. 16/429687 (153090US01)</li>
-                                        <ul class="custom-indent"></ul>
-                                            </li>Inventors: Mohsen Ghazel, Joseph Lam, Qifeng Gan, Kiril Lomakin</li>
-                                            </li>Company: Zebra Technologies</li>
+                                    <li>Integration of developed CV pipelines and tools into retail-stores monitoring and analytics robotic system:</li>
+                                        <ul class="custom-indent">
+                                            <li>Zebra Technologies EMA50 (Enterprise Mobile Automation), an autonomous scanning robot designed for front-of-store inventory monitoring</li>
+                                            <li>Near-real-time performance, robust to real-world data variations</li>
+                                            <li>Development, integration, deployment, testing, trouble-shooting and maintenance.</li>
                                         </ul>
                                 </ul>
-                        </ul>
+                            </td>
+                        <tr>
 
-                    </td>
-                    <tr>
+                        <tr>
+                            <td data-label="#">7</td> 
+                            <td data-label="Category">Patents</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li><a href="https://patents.justia.com/patent/20200380317/">Method, System and Apparatus for Gap Detection in Support Structures with Peg Regions:</a></li>
+                                        <ul class="custom-indent">
+                                            <li>U.S. Patent and Trademark Office under Application No. 16/429687 (153090US01)</li>
+                                                <ul class="custom-indent"></ul>
+                                                    </li>Inventors: Mohsen Ghazel, Joseph Lam, Qifeng Gan, Kiril Lomakin</li>
+                                                    </li>Company: Zebra Technologies</li>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -625,75 +683,85 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Image System Hardware</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive exposure settings.</li>
-                                <li></li>Provided technical support for a robotic vision-based system for camera PCB programming:</li>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Image System Hardware</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Investigated, evaluated and demonstrated the optimal selection of light sources, lenses/optics, sensors/cameras and adaptive exposure settings.</li>
+                                    <li></li>Provided technical support for a robotic vision-based system for camera PCB programming:</li>
+                                        <ul class="custom-indent">
+                                            <li>Solving vision system calibration issues encountered during the manufacturing process.</li>
+                                            <li>Improving existing calibration algorithms and processes.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Image Processing Algorithms</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Developed, tested, and integrated image processing algorithms for digital vision camera adaptive ISP pipelines: </li>
+                                        <ul class="custom-indent">
+                                            <li>Developed image processing, visualization, and exploitation ISP algorithms for mono and color polarized-sensor vision cameras.</li>
+                                            <li>Developed adaptive on-camera defective pixels’ detection and correction ISP algorithms</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">Machine & Deep Learning Models</td> 
+                            <td data-label="Skills">
                                     <ul class="custom-indent">
-                                        <li>Solving vision system calibration issues encountered during the manufacturing process.</li>
-                                        <li>Improving existing calibration algorithms and processes.</li>
+                                        <li>Adapting and training deep learning (DL) object detection models for people detection, tracking, and counting:</li>
+                                            <ul class="custom-indent">
+                                                <li>Adapted various TensorFlow object detection API pre-trained DL models for people detection.</li>
+                                                <li>Post-processed detection results to reduce false alarms </li>
+                                                <li>Integrated the trained people detection DL inference models into a FLIR people detection, tracking, and counting system.</li>
+                                            </ul>
+                                        <li>Adapted and trained deep learning (DL) object detection models for face detection::</li>
+                                            <ul class="custom-indent">
+                                                <li>Fine-tuned and evaluated the performance of SSD-MobileNet models for Face Detection using the WIDER FACE dataset.</li>
+                                                <li>SOptimized and deployed the trained Face Detection DL model on mobile systems using OpenVINO, Intel Neural Compute Stick, and FLIR Firefly Deep Learning Inference camera.</li>
+                                            </ul>
                                     </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Image Processing Algorithms</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Developed, tested, and integrated image processing algorithms for digital vision camera adaptive ISP pipelines: </li>
-                                    <ul class="custom-indent">
-                                        <li>Developed image processing, visualization, and exploitation ISP algorithms for mono and color polarized-sensor vision cameras.</li>
-                                        <li>Developed adaptive on-camera defective pixels’ detection and correction ISP algorithms</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                    <td>Machine & Deep Learning Models</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Adapting and training deep learning (DL) object detection models for people detection, tracking, and counting:</li>
-                                    <ul class="custom-indent">
-                                        <li>Adapted various TensorFlow object detection API pre-trained DL models for people detection.</li>
-                                        <li>Post-processed detection results to reduce false alarms </li>
-                                        <li>Integrated the trained people detection DL inference models into a FLIR people detection, tracking, and counting system.</li>
-                                    </ul>
-                                <li>Adapted and trained deep learning (DL) object detection models for face detection::</li>
-                                    <ul class="custom-indent">
-                                        <li>Fine-tuned and evaluated the performance of SSD-MobileNet models for Face Detection using the WIDER FACE dataset.</li>
-                                        <li>SOptimized and deployed the trained Face Detection DL model on mobile systems using OpenVINO, Intel Neural Compute Stick, and FLIR Firefly Deep Learning Inference camera.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Python, C++, OpenCV (Python and C++ API), TensorFlow, PyTorch, AWS Sage Maker (data annotation, model training, fine-tuning, testing and performance evaluation), Scikit-learn, Scikit-Image,  MATLAB, SVN (version control), VIA Annotation Tool (data annotation).</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>System Integration & Deployment</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Integrated the developed algorithms into FLIR vision cameras Spinnaker API:</li>
-                                    <ul class="custom-indent">
-                                        <li>Near-real-time performance</li>
-                                        <li>Robust to real-world data variations</li>
-                                        <li>Deployment, testing, trouble-shooting and maintenance. </li>
-                                    </ul>
-                            </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Python, C++, OpenCV (Python and C++ API), TensorFlow, PyTorch, AWS Sage Maker (data annotation, model training, fine-tuning, testing and performance evaluation), Scikit-learn, Scikit-Image,  MATLAB, SVN (version control), VIA Annotation Tool (data annotation).</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">5</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Integrated the developed algorithms into FLIR vision cameras Spinnaker API:</li>
+                                        <ul class="custom-indent">
+                                            <li>Near-real-time performance</li>
+                                            <li>Robust to real-world data variations</li>
+                                            <li>Deployment, testing, trouble-shooting and maintenance. </li>
+                                        </ul>
+                                </ul>
 
-                        </td>
-                    </tr>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -708,66 +776,75 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Time-series forecasting</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Developing adaptive time-series statistical algorithms and forecasting system for predicting the earliest time to safely remove the patient’s chest-tube after lung surgery.</li>
-                                <li>Publishing and presenting results in peer-reviewed journals and conferences.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Dimensionality reduction </td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Developing and evaluating a novel algorithm to improve the performance of active learning techniques for imbalanced classification using dimensionality and redundancy reduction and pre-filtering of unlabeled input data, including:</li>
-                                    <ul class="custom-indent">
-                                        <li>Developing dimensionality and redundancy reduction techniques for reducing computational complexity and redundancy in active learning in imbalanced machine learning problems</li>
-                                        <li>Publishing and presenting results in peer-reviewed conferences.</li>
-                                    </ul>
-                                    <ul class="custom-indent">
-                                        <li>Adapted various TensorFlow object detection API pre-trained DL models for people detection.</li>
-                                        <li>Post-processed detection results to reduce false alarms </li>
-                                        <li>Integrated the trained people detection DL inference models into a FLIR people detection, tracking, and counting system.</li>
-                                    </ul>
-                                <li>Adapted and trained deep learning (DL) object detection models for face detection::</li>
-                                    <ul class="custom-indent">
-                                        <li>Fine-tuned and evaluated the performance of SSD-MobileNet models for Face Detection using the WIDER FACE dataset.</li>
-                                        <li>SOptimized and deployed the trained Face Detection DL model on mobile systems using OpenVINO, Intel Neural Compute Stick, and FLIR Firefly Deep Learning Inference camera.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>MATLAB, Python, SciPy, R, EXCEL, SPSS, SVN..</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Publications</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6258659/ ">Forecasting pulmonary air leak duration following lung surgery using transpleural airflow data from a digital pleural drainage device:</a></li>
-                                    <ul class="custom-indent">
-                                        <li>Ching Yeung, Mohsen Ghazel, Daniel French, Nathalie Japkowicz, Bram Gottlieb, Donna Maziak, Andrew J. E. Seely, Farid Shamji, Sudhir Sundaresan, Patrick James Villeneuve, Sebastien Gilbert. </li>
-                                        <li>Journal of Thoracic Disease, 2018 Nov; 10 (Suppl 32): S3747–S3754.</li>
-                                    </ul>
-                                <li><a href="https://www.researchgate.net/publication/315930703_Improving_Active_Learning_for_One-Class_Classification_Using_Dimensionality_Reduction/">Improving Active Learning for One-Class Classification Using Dimensionality Reduction::</a></li>
-                                    <ul class="custom-indent">
-                                        <li>Mohsen Ghazel, Nathalie Japkowicz </li>
-                                        <li>Conference: Canadian Conference on Artificial Intelligence (2017).</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Time-series forecasting</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Developing adaptive time-series statistical algorithms and forecasting system for predicting the earliest time to safely remove the patient’s chest-tube after lung surgery.</li>
+                                    <li>Publishing and presenting results in peer-reviewed journals and conferences.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Dimensionality reduction </td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Developing and evaluating a novel algorithm to improve the performance of active learning techniques for imbalanced classification using dimensionality and redundancy reduction and pre-filtering of unlabeled input data, including:</li>
+                                        <ul class="custom-indent">
+                                            <li>Developing dimensionality and redundancy reduction techniques for reducing computational complexity and redundancy in active learning in imbalanced machine learning problems</li>
+                                            <li>Publishing and presenting results in peer-reviewed conferences.</li>
+                                        </ul>
+                                        <ul class="custom-indent">
+                                            <li>Adapted various TensorFlow object detection API pre-trained DL models for people detection.</li>
+                                            <li>Post-processed detection results to reduce false alarms </li>
+                                            <li>Integrated the trained people detection DL inference models into a FLIR people detection, tracking, and counting system.</li>
+                                        </ul>
+                                    <li>Adapted and trained deep learning (DL) object detection models for face detection::</li>
+                                        <ul class="custom-indent">
+                                            <li>Fine-tuned and evaluated the performance of SSD-MobileNet models for Face Detection using the WIDER FACE dataset.</li>
+                                            <li>SOptimized and deployed the trained Face Detection DL model on mobile systems using OpenVINO, Intel Neural Compute Stick, and FLIR Firefly Deep Learning Inference camera.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>MATLAB, Python, SciPy, R, EXCEL, SPSS, SVN..</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">Publications</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6258659/ ">Forecasting pulmonary air leak duration following lung surgery using transpleural airflow data from a digital pleural drainage device:</a></li>
+                                        <ul class="custom-indent">
+                                            <li>Ching Yeung, Mohsen Ghazel, Daniel French, Nathalie Japkowicz, Bram Gottlieb, Donna Maziak, Andrew J. E. Seely, Farid Shamji, Sudhir Sundaresan, Patrick James Villeneuve, Sebastien Gilbert. </li>
+                                            <li>Journal of Thoracic Disease, 2018 Nov; 10 (Suppl 32): S3747–S3754.</li>
+                                        </ul>
+                                    <li><a href="https://www.researchgate.net/publication/315930703_Improving_Active_Learning_for_One-Class_Classification_Using_Dimensionality_Reduction/">Improving Active Learning for One-Class Classification Using Dimensionality Reduction::</a></li>
+                                        <ul class="custom-indent">
+                                            <li>Mohsen Ghazel, Nathalie Japkowicz </li>
+                                            <li>Conference: Canadian Conference on Artificial Intelligence (2017).</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -781,38 +858,46 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Conventional Computer Vision Pipelines</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Developed, evaluated and deployed computer vision and machine learning algorithms and software solutions for detecting various foot measurements from customers foot imagery, including:</li>
+                                        <ul class="custom-indent">
+                                            <li>Implementing algorithms include image segmentation and classification, object detection and recognition, skin detection, classification and segmentation using machine learning, feature detection, matching and tracking, image enhancement, edge detection, line detection, illumination-invariant background subtraction. </li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
 
-                    <td>Conventional Computer Vision Pipelines</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Developed, evaluated and deployed computer vision and machine learning algorithms and software solutions for detecting various foot measurements from customers foot imagery, including:</li>
-                                    <ul class="custom-indent">
-                                        <li>Implementing algorithms include image segmentation and classification, object detection and recognition, skin detection, classification and segmentation using machine learning, feature detection, matching and tracking, image enhancement, edge detection, line detection, illumination-invariant background subtraction. </li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-
-                    </tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>C++, OpenCV, SVN.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>System Integration & Deployment</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Integrating the developed computer vision sub-systems within a fully automated cloud-based software system for data acquisition, pre-processing, foot measurements extraction, 3D models generation and 3D printing for custom-fit footwear products. </li>
-                            </ul>
-                        </td>
-                    <tr>
+                        </tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>C++, OpenCV, SVN.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Integrating the developed computer vision sub-systems within a fully automated cloud-based software system for data acquisition, pre-processing, foot measurements extraction, 3D models generation and 3D printing for custom-fit footwear products. </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
                 <br>
 
@@ -829,58 +914,67 @@
                         </ul>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                    <tr>
-                        <td>Satellite image processing</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Collaborated on many R&D projects focusing on processing and exploiting Synthetic Aperture Radar (SAR/InSAR) and optical satellite imagery as well as full-motion video and LiDAR data for various real-world civilian and security applications:</li>
-                                    <ul class="custom-indent">
-                                        <li>Change detection: Agricultural monitoring, vegetation and soil moisture maps </li>
-                                        <li>Target detection: Ship-detection, crashed planes detection in the arctic, other security and military target detection and recognition. </li>
-                                        <li>Earth's surface deformation monitoring using InSAR: Monitoring of infrastructures, bridges, buildings, roads, airport runways, landslides, mining sites, etc.</li>
-                                        <li>Developing hybrid solutions using SAR and Optical satellite data fusion.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Full-motion video processing</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Collaborated on many R&D projects focusing full-motion video and LiDAR data processing and exploitation projects focused on::</li>
-                                    <ul class="custom-indent">
-                                        <li>Developing video calibration, pre-processing and stabilization algorithms and software tools.</li>
-                                        <li>Developing feature-based image registration and alignment for mosaicking from full-motion video.</li>
-                                        <li>Developing 3D reconstruction and modeling algorithms using Structure from Motion techniques.</li>
-                                        <li>Developing change detection and classification from repeat-pass full-motion videos.</li>
-                                        <li>Developing people and vehicle detection and activity recognition from full-motion video data.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>C++, OpenCV., MATLAB, ENVI, IDL, ArcGIS and Google Earth.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>System Integration & Deployment</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Integrating the developed computer vision sub-systems within a fully automated cloud-based software system for data acquisition, pre-processing, foot measurements extraction, 3D models generation and 3D printing for custom-fit footwear products. </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Publications</td>
-                            <td>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Satellite image processing</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Collaborated on many R&D projects focusing on processing and exploiting Synthetic Aperture Radar (SAR/InSAR) and optical satellite imagery as well as full-motion video and LiDAR data for various real-world civilian and security applications:</li>
+                                        <ul class="custom-indent">
+                                            <li>Change detection: Agricultural monitoring, vegetation and soil moisture maps </li>
+                                            <li>Target detection: Ship-detection, crashed planes detection in the arctic, other security and military target detection and recognition. </li>
+                                            <li>Earth's surface deformation monitoring using InSAR: Monitoring of infrastructures, bridges, buildings, roads, airport runways, landslides, mining sites, etc.</li>
+                                            <li>Developing hybrid solutions using SAR and Optical satellite data fusion.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Full-motion video processing</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Collaborated on many R&D projects focusing full-motion video and LiDAR data processing and exploitation projects focused on::</li>
+                                        <ul class="custom-indent">
+                                            <li>Developing video calibration, pre-processing and stabilization algorithms and software tools.</li>
+                                            <li>Developing feature-based image registration and alignment for mosaicking from full-motion video.</li>
+                                            <li>Developing 3D reconstruction and modeling algorithms using Structure from Motion techniques.</li>
+                                            <li>Developing change detection and classification from repeat-pass full-motion videos.</li>
+                                            <li>Developing people and vehicle detection and activity recognition from full-motion video data.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>C++, OpenCV., MATLAB, ENVI, IDL, ArcGIS and Google Earth.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">System Integration & Deployment</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Integrating the developed computer vision sub-systems within a fully automated cloud-based software system for data acquisition, pre-processing, foot measurements extraction, 3D models generation and 3D printing for custom-fit footwear products. </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">5</td> 
+                            <td data-label="Category">Publications</td>
+                            <td data-label="Skills">
                                 <ul class="custom-indent">
                                     <li><a href="https://www.researchgate.net/publication/280560670_Object_and_Activity_Detection_from_Aerial_Video/">Object and activity detection from aerial video:</a></li>
                                         <ul class="custom-indent">
@@ -919,7 +1013,8 @@
                                         </ul>
                                 </ul>
                             </td>
-                        <tr>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <br>
@@ -930,69 +1025,79 @@
                     <li>Researched, developed and published computer vision systems for detecting and quantifying multiple-sclorosis lesions from brain MRI imaging.</li>
                 </ul>
                 <table class="modern-table">
-                    <tr>
-                        <th>Category</th>
-                        <th>Key Skills & Technologies</th>
-                    </tr>
-                        <td>Teaching Assistant</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Assisted with teaching several electrical and computer engineering undergraduate courses, including:</li>
-                                    <ul class="custom-indent">
-                                        <li>Digital signal processing and commuincation</li>
-                                        <li>Digital image processing </li>
-                                        <li>Engineering design.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Medical Imaging</td> 
-                        <td>
-                            <ul class="custom-indent">
-                                <li>Conducted research in medical imaging for developing computer vision system for detecting and quantifying multiple-sclerosis (MS) lesions from brain MRI::</li>
-                                    <ul class="custom-indent">
-                                        <li>Developed automated computer vision pipelines for MS lesions detection and quantification from brain MRI using advanced image processing techniques and evaluating their performance: </li>
-                                            <ul class="custom-indent">
-                                                <li>Segmentation of brain MRI time series scans using Insight Toolkit (ITK) segmentation algorithms</li>
-                                                <li>Registration of brain MRI time series scans using Insight Toolkit (ITK) non-rigid registration algorithms</li>
-                                                <li>Detection of MS lesions using statistical anomaly detection </li>
-                                                <li>Detection of MS lesions using optimal filter design</li>
-                                                <li>Detection of MS lesions using feature engineering and clustering algorithms</li>
-                                                <li>Worked closely with medical professional and explored ways to improve the computer aided system</li>
-                                                <li>Published and presented research papers in various international conferences.</li>
-                                    </ul>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Software Development</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li>C++, OpenCV, Insight Toolkit (ITK) MRI pre-processing, non-rigid registration, segmentation and visualization tools, MATLAB.</li>
-                            </ul>
-                        </td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Key Skills & Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td> 
+                            <td data-label="Category">Teaching Assistant</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Assisted with teaching several electrical and computer engineering undergraduate courses, including:</li>
+                                        <ul class="custom-indent">
+                                            <li>Digital signal processing and commuincation</li>
+                                            <li>Digital image processing </li>
+                                            <li>Engineering design.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td> 
+                            <td data-label="Category">Medical Imaging</td> 
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>Conducted research in medical imaging for developing computer vision system for detecting and quantifying multiple-sclerosis (MS) lesions from brain MRI::</li>
+                                        <ul class="custom-indent">
+                                            <li>Developed automated computer vision pipelines for MS lesions detection and quantification from brain MRI using advanced image processing techniques and evaluating their performance: </li>
+                                                <ul class="custom-indent">
+                                                    <li>Segmentation of brain MRI time series scans using Insight Toolkit (ITK) segmentation algorithms</li>
+                                                    <li>Registration of brain MRI time series scans using Insight Toolkit (ITK) non-rigid registration algorithms</li>
+                                                    <li>Detection of MS lesions using statistical anomaly detection </li>
+                                                    <li>Detection of MS lesions using optimal filter design</li>
+                                                    <li>Detection of MS lesions using feature engineering and clustering algorithms</li>
+                                                    <li>Worked closely with medical professional and explored ways to improve the computer aided system</li>
+                                                    <li>Published and presented research papers in various international conferences.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td> 
+                            <td data-label="Category">Software Development</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li>C++, OpenCV, Insight Toolkit (ITK) MRI pre-processing, non-rigid registration, segmentation and visualization tools, MATLAB.</li>
+                                </ul>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Publications</td>
-                        <td>
-                            <ul class="custom-indent">
-                                <li><a href="https://ieeexplore.ieee.org/document/4042201/">Optimal Filter Design for Multiple Sclerosis Lesions Segmentation from Regions of Interest in Brain MRI:</a></li>
-                                    <ul class="custom-indent">
-                                        <li>Mohsen Ghazel, Anthony Traboulsee, Rabab Ward</li>
-                                        <li>IEEE International Symposium on Signal Processing. 27 August 2006.</li>
-                                    </ul>
+                        <tr>
+                            <td data-label="#">4</td> 
+                            <td data-label="Category">Publications</td>
+                            <td data-label="Skills">
+                                <ul class="custom-indent">
+                                    <li><a href="https://ieeexplore.ieee.org/document/4042201/">Optimal Filter Design for Multiple Sclerosis Lesions Segmentation from Regions of Interest in Brain MRI:</a></li>
+                                        <ul class="custom-indent">
+                                            <li>Mohsen Ghazel, Anthony Traboulsee, Rabab Ward</li>
+                                            <li>IEEE International Symposium on Signal Processing. 27 August 2006.</li>
+                                        </ul>
 
-                                <li><a href="https://ieeexplore.ieee.org/document/4042202/">Semi-Automated Segmentation of Multiple Sclerosis Lesions in Brain MRI using Texture Analysis:</a></li>
-                                    <ul class="custom-indent">
-                                        <li>Mohsen Ghazel, Anthony Traboulsee, Rabab Ward</li>
-                                        <li>IEEE International Symposium on Signal Processing. 27 August 2006.</li>
-                                    </ul>
-                            </ul>
+                                    <li><a href="https://ieeexplore.ieee.org/document/4042202/">Semi-Automated Segmentation of Multiple Sclerosis Lesions in Brain MRI using Texture Analysis:</a></li>
+                                        <ul class="custom-indent">
+                                            <li>Mohsen Ghazel, Anthony Traboulsee, Rabab Ward</li>
+                                            <li>IEEE International Symposium on Signal Processing. 27 August 2006.</li>
+                                        </ul>
+                                </ul>
 
-                        </td>
-                    <tr>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
             </div>
@@ -1002,12 +1107,14 @@
     <br>
     <br>
     <!-- Scroll to the very top of the document -->
-    <a href="#top" class="back-to-top">Go to top!</a>
+    <a href="#top" class="back-to-top">Top</a>
     <hr>
     <footer>
         <p>© February 2026 &ndash; Mohsen Ghazel</p>
     </footer>
+    <!-- Bootstrap JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My JS File -->
     <script src="js/script.js"></script>
 </body>
 </html>
-

@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Project # 1 | Mohsen Ghazel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- My Styles Sheet-->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -52,46 +59,50 @@
         <br>
         <div>
             <table class="modern-table">
-                <tr>
-                    <th>#</th>
-                    <th>Hardware Component</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Lighting (Illumination)</td>
-                    <td>Essential for high-quality images, often using techniques like dome, ring, or line lights to create contrast for inspection</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Lens (Optics)</td>
-                    <td>Collects light from the object and focuses it onto the camera sensor, with choices based on focal length, magnification, and depth of field.</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Camera (Sensor)</td>
-                    <td>Captures the image using either area (full image) or linescan (line-by-line) technology, functioning as the "eye" of the system.</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Image Processing Hardware/Processor</td>
-                    <td>Analyzes data, including smart cameras, embedded systems, PCs, or DSPs that process the image using algorithms.</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Frame Grabber/Digitizer</td>
-                    <td>Captures and converts the analog or digital image from the camera into data for the processor.</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Communication/I/O Modules</td>
-                    <td>Interfaces such as PLC, Ethernet, or digital I/O that transmit results to other automation machinery.</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Mechanical Components (Staging/Mounting)</td>
-                    <td>Fixtures that holds the part and camera in a precise location</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Hardware Component</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="#">1</td>
+                        <td data-label="Hardware">Lighting (Illumination)</td>
+                        <td data-label="Description">Essential for high-quality images, often using techniques like dome, ring, or line lights to create contrast for inspection</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">2</td>
+                        <td data-label="Hardware">Lens (Optics)</td>
+                        <td data-label="Description">Collects light from the object and focuses it onto the camera sensor, with choices based on focal length, magnification, and depth of field.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">3</td>
+                        <td data-label="Hardware">Camera (Sensor)</td>
+                        <td data-label="Description">Captures the image using either area (full image) or linescan (line-by-line) technology, functioning as the "eye" of the system.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">4</td>
+                        <td data-label="Hardware">Image Processing Hardware/Processor</td>
+                        <td data-label="Description">Analyzes data, including smart cameras, embedded systems, PCs, or DSPs that process the image using algorithms.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">5</td>
+                        <td data-label="Hardware">Frame Grabber/Digitizer</td>
+                        <td data-label="Description">Captures and converts the analog or digital image from the camera into data for the processor.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">6</td>
+                        <td data-label="Hardware">Communication/I/O Modules</td>
+                        <td data-label="Description">Interfaces such as PLC, Ethernet, or digital I/O that transmit results to other automation machinery.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">7</td>
+                        <td data-label="Hardware">Mechanical Components (Staging/Mounting)</td>
+                        <td data-label="Description">Fixtures that holds the part and camera in a precise location</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <br>
@@ -106,106 +117,110 @@
         <br>
         <div>
             <table class="modern-table">
-                <tr>
-                    <th>#</th>
-                    <th>Layer</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Industrial Scene</td>
-                    <td>
-                        <ul>
-                            <li>The target object, part, or scene on a production line to be inspected, measured, or identified.</li>
-                            <li>Objective: Gather information about: </li>
-                                <ul class="custom-indent">
-                                    <li>Target object speed, reflectivity, size, tolerance. </li>
-                                    <li>Environmental ambient light, contamination (dust, oil, vibration). </li>
-                                </ul>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Illumination Layer</td>
-                    <td>
-                        <ul>
-                            <li>Specialized lighting (LED, backlight, dome) designed to maximize contrast, minimize shadows, and isolate the features of interest. </li>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Layer</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="#">1</td>
+                        <td data-label="Layer">Industrial Scene</td>
+                        <td data-label="Description">
+                            <ul>
+                                <li>The target object, part, or scene on a production line to be inspected, measured, or identified.</li>
+                                <li>Objective: Gather information about: </li>
+                                    <ul class="custom-indent">
+                                        <li>Target object speed, reflectivity, size, tolerance. </li>
+                                        <li>Environmental ambient light, contamination (dust, oil, vibration). </li>
+                                    </ul>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">2</td>
+                        <td data-label="Layer">Illumination Layer</td>
+                        <td data-label="Description">
+                            <ul>
+                                <li>Specialized lighting (LED, backlight, dome) designed to maximize contrast, minimize shadows, and isolate the features of interest. </li>
+                                    <ul class="custom-indent"></ul>
+                                        <li>Objective: Control photons before they enter the lens: </li>
+                                        <li>Lighting defines contrast, signal-to-noise ratio and repeatability.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">3</td>
+                        <td data-label="Layer">Optical Layer (Lens)</td>
+                        <td data-label="Description">
+                            <ul>
+                                <li>Gathers light from the scene and projects the image onto the camera sensor. Key factors include focal length, aperture, and magnification.</li>
                                 <ul class="custom-indent"></ul>
-                                    <li>Objective: Control photons before they enter the lens: </li>
-                                    <li>Lighting defines contrast, signal-to-noise ratio and repeatability.</li>
+                                    <li>Lens determines Field of view (FOV), Magnification, Depth of field (DOF), Distortion, Resolution transfer (MTF).</li>
                                 </ul>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Optical Layer (Lens)</td>
-                    <td>
-                        <ul>
-                            <li>Gathers light from the scene and projects the image onto the camera sensor. Key factors include focal length, aperture, and magnification.</li>
-                            <ul class="custom-indent"></ul>
-                                <li>Lens determines Field of view (FOV), Magnification, Depth of field (DOF), Distortion, Resolution transfer (MTF).</li>
                             </ul>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Sensor Layer (Camera)</td>
-                    <td>
-                        <ul>
-                            <li>Converts the optical image (photons) into an electrical signal. CCD or CMOS sensors are typical, defining the resolution and frame rate.</li>
-                            <ul class="custom-indent"></ul>
-                                <li>Sensor determines Pixel size, Full well capacity, Quantum efficiency, Shutter type, Frame rate, Dynamic range.</li>
-                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">4</td>
+                        <td data-label="Layer">Sensor Layer (Camera)</td>
+                        <td data-label="Description">
+                            <ul>
+                                <li>Converts the optical image (photons) into an electrical signal. CCD or CMOS sensors are typical, defining the resolution and frame rate.</li>
+                                <ul class="custom-indent"></ul>
+                                    <li>Sensor determines Pixel size, Full well capacity, Quantum efficiency, Shutter type, Frame rate, Dynamic range.</li>
+                                </ul>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Interface Layer</td>
-                    <td>
-                        <ul>
-                            <li>The physical connection and protocol used to transmit data from the camera (GigE Vision, USB3 Vision, CoaXPress).</li>
-                            <ul class="custom-indent"></ul>
-                                <li>This layer defines: Bandwidth, Cable length, Latency, Determinism, Power delivery. </li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">5</td>
+                        <td data-label="Layer">Interface Layer</td>
+                        <td data-label="Description">
+                            <ul>
+                                <li>The physical connection and protocol used to transmit data from the camera (GigE Vision, USB3 Vision, CoaXPress).</li>
+                                <ul class="custom-indent"></ul>
+                                    <li>This layer defines: Bandwidth, Cable length, Latency, Determinism, Power delivery. </li>
+                                </ul>
                             </ul>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Acquisition Layer</td>
-                    <td>Frame grabbers or Network Interface Cards (NIC) that receive, buffer, and convert data into a format suitable for the processing unit.</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Processing Layer (CPU/GPU/FPGA)</td>
-                    <td>
-                        <ul>
-                            <li>The computing hardware—industrial PC, smart camera processor, or embedded system—that executes algorithms.</li>
-                            <ul class="custom-indent"></ul>
-                                <li>For the processing layer, we need to decide whether to use edge devices, industrial PCs, GPU, FPGA, or AI accelerations.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">6</td>
+                        <td data-label="Layer">Acquisition Layer</td>
+                        <td data-label="Description">Frame grabbers or Network Interface Cards (NIC) that receive, buffer, and convert data into a format suitable for the processing unit.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">7</td>
+                        <td data-label="Layer">Processing Layer (CPU/GPU/FPGA)</td>
+                        <td data-label="Description">
+                            <ul>
+                                <li>The computing hardware—industrial PC, smart camera processor, or embedded system—that executes algorithms.</li>
+                                <ul class="custom-indent"></ul>
+                                    <li>For the processing layer, we need to decide whether to use edge devices, industrial PCs, GPU, FPGA, or AI accelerations.</li>
+                                </ul>
                             </ul>
-                        </ul>
-                    </td>    
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Application Layer</td>
-                    <td>Software algorithms (e.g., OCR, pattern matching, blob analysis, AI/Deep Learning) that interpret the image and extract key data.</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Decision / Control Layer</td>
-                    <td>
-                        <li>The final stage where the system acts, communicating results to a PLC, Robot, or MES system to accept/reject parts, or guide motion.</li>
-                        <ul class="custom-indent"></ul>
-                                <li>Control Layer involves PLC communication (Profinet / EtherCAT / Modbus), Robot feedback, MES integration.</li>
-                        </ul>
-                    </td>
-                </tr>  
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td data-label="#">8</td>
+                        <td data-label="Layer">Application Layer</td>
+                        <td data-label="Description">Software algorithms (e.g., OCR, pattern matching, blob analysis, AI/Deep Learning) that interpret the image and extract key data.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">9</td>
+                        <td data-label="Layer">Decision / Control Layer</td>
+                        <td data-label="Description">
+                            <li>The final stage where the system acts, communicating results to a PLC, Robot, or MES system to accept/reject parts, or guide motion.</li>
+                            <ul class="custom-indent"></ul>
+                                    <li>Control Layer involves PLC communication (Profinet / EtherCAT / Modbus), Robot feedback, MES integration.</li>
+                            </ul>
+                        </td>
+                    </tr>  
+                </tbody>
             </table>
         </div>
         <br>
@@ -217,62 +232,66 @@
         <br>
         <div>
             <table class="modern-table">
-                <tr>
-                    <th>Step</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>Description of the Machine Vision Application.</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Define measurement requirements, smallest feature size and tolerance.</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Compute required pixel resolution.</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Compute Field of View (FOV).</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Select sensor resolution.</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Check motion and determine the exposure constraints.</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Select shutter type.</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Compute lens focal length.</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Validate optical resolution vs pixel size.</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Select lighting based on surface physics.</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Validate interface bandwidth.</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Validate environmental robustness.</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Risk mitigation review.</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Step # </th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="#">1</td>
+                        <td data-label="Description">Description of the Machine Vision Application.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">2</td>
+                        <td data-label="Description">Define measurement requirements, smallest feature size and tolerance.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">3</td>
+                        <td data-label="Description">Compute required pixel resolution.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">4</td>
+                        <td data-label="Description">Compute Field of View (FOV).</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">5</td>
+                        <td data-label="Description">Select sensor resolution.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">6</td>
+                        <td data-label="Description">Check motion and determine the exposure constraints.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">7</td>
+                        <td data-label="Description">Select shutter type.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">8</td>
+                        <td data-label="Description">Compute lens focal length.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">9</td>
+                        <td data-label="Description">Validate optical resolution vs pixel size.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">10</td>
+                        <td data-label="Description">Select lighting based on surface physics.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">11</td>
+                        <td data-label="Description">Validate interface bandwidth.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">12</td>
+                        <td data-label="Description">Validate environmental robustness.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">13</td>
+                        <td data-label="Description">Risk mitigation review.</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <br>
@@ -284,328 +303,328 @@
         <br>
         <div>
             <table class="modern-table">
-                <tr>
-                    <th>Step</th>
-                    <th>Description</th>
-                    <th>Decision making process</th>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>Machine Vision Application</td>
-                    <td>
-                        <li>Inspect a continuously moving steel strip for surface scratches and pits:</li>
-                        <ul class="custom-indent">
-                            <li>Given:</li>
+                <thead>
+                    <tr>
+                        <th>Step # </th>
+                        <th>Description</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="#">1</td>
+                        <td data-label="Description">Machine Vision Application</td>
+                        <td data-label="Decision">
+                            <li>Inspect a continuously moving steel strip for surface scratches and pits:</li>
+                            <ul class="custom-indent">
+                                <li>Given:</li>
+                                    <ul class="custom-indent">
+                                        <li>Strip width: 1.5 meters</li>
+                                        <li>Speed: 3 m/s</li>
+                                        <li>Smallest defect: 0.2 mm</li>
+                                        <li>Required detection confidence: high (industrial QA)</li>
+                                        <li>Environment: hot, dusty, vibrating</li>
+                                        <li>Inspection must be continuous (no missing areas)</li>
+                                    </ul>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">2</td>
+                        <td data-label="Description">Determine Required Spatial Resolution</td>
+                        <td data-label="Decision">
+                            <li>Smallest defect: 0.2 mm</li>
+                            <li>Industrial best practice:</li>
                                 <ul class="custom-indent">
-                                    <li>Strip width: 1.5 meters</li>
-                                    <li>Speed: 3 m/s</li>
-                                    <li>Smallest defect: 0.2 mm</li>
-                                    <li>Required detection confidence: high (industrial QA)</li>
-                                    <li>Environment: hot, dusty, vibrating</li>
-                                    <li>Inspection must be continuous (no missing areas)</li>
+                                    <li>3 pixels per minimum feature for detection</li>
+                                    <li>5 pixels per feature for measurement</li>
+                                    <li>We’ll design for detection → 3 pixels.</li>
                                 </ul>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Determine Required Spatial Resolution</td>
-                    <td>
-                        <li>Smallest defect: 0.2 mm</li>
-                        <li>Industrial best practice:</li>
-                            <ul class="custom-indent">
-                                <li>3 pixels per minimum feature for detection</li>
-                                <li>5 pixels per feature for measurement</li>
-                                <li>We’ll design for detection → 3 pixels.</li>
-                            </ul>
-                        <li>0.20 mm / 3 = 0.067 mm / pixel.</li>
-                        <li>So required spatial sampling: 0.067mm/pixel</li>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Compute Required Pixels Across Width</td>
-                    <td>
-                        <li>Compute the number of required pixels across the width: </li>
-                            <ul class="custom-indent">
-                                <li>Width = 1500 mm</li>
-                                <li>1500 mm / 0.067 mm / pixel ≈ 22,388 pixels</li>
-                                <li>So we need approximately: 23k pixels across width </li>
-                                <li>This immediately tells us:</li>
-                                    <ul class="custom-indent">
-                                        <li>Area scan is not practical</li>
-                                        <li>We need line scan.</li>
-                                    </ul>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Line Rate Requirement (Motion Constraint)</td>
-                    <td>
-                        <li>Line Rate Requirement (Motion Constraint): </li>
-                            <ul class="custom-indent">
-                                <li>Strip speed = 3 m/s = 3000 mm/s</li>
-                                <li>We need vertical resolution also 0.067 mm/pixel.</li>
-                                <li>So line spacing must equal: 0.067mm </li>
-                                <li>Line rate required = 3000 / 0.067 ≈ 44,776 lines/sec ≈ 45 kHz line rate</li>
-                                <li>This is high-speed industrial inspection.</li>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Exposure Time (Motion Blur)</td>
-                    <td>
-                        <li>Exposure Time (Motion Blur): </li>
-                            <ul class="custom-indent">
-                                <li>Allow blur ≤ 1 pixel (0.067 mm)</li>
-                                <li>Using formula: <em> Blur = Speed × Exposure </em> </li>
-                                <li><em>Exposure ≤ 0.067 / 3000 </em>
-                                <li>Which yields: <em>Exposure ≤ 22 µs </em>
-                                <li>This is extremely short.</li>
-                                <li>Thus:</li>
-                                    <ul class="custom-indent">
-                                        <li>Requires very strong illumination</li>
-                                        <li>Requires high-sensitivity sensor</li>
-                                        <li>Likely requires line scan with TDI if light insufficient.</li>
-                                    </ul>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Sensor Choice</td>
-                    <td>
-                        <li>Exposure Time (Motion Blur): </li>
-                            <ul class="custom-indent">
-                                <li>We need:</li>
-                                    <ul class="custom-indent">
-                                        <li>23k pixels horizontal</li>
-                                        <li>45 kHz line rate</li>
-                                        <li>Global shutter equivalent (line scan inherently OK)</li>
-                                        <li>High dynamic range</li>
-                                        <li>High sensitivity at 20 µs exposure</li>
-                                        <li>Industrial solution:</li>
-                                            <ul class="custom-indent">
-                                                <li>Line scan camera, 16k or 24k resolution:</li>
-                                                    <ul class="custom-indent">
-                                                        <li>Candidates:</li>
-                                                            <ul class="custom-indent">
-                                                                <li>16k may be insufficient (16k × 0.067 = 1072 mm coverage only)</li>
-                                                                <li>So we need 23k → choose 24k line scan</li>
-                                                                <li>Typical 24k pixel size ≈ 5 µm</li>
-                                                                    <ul class="custom-indent">
-                                                                        <li>Why use 5 µm pixel?</li>
-                                                                            <ul class="custom-indent">
-                                                                                <li>Tradeoff:</li> 
-                                                                                    <ul class="custom-indent">
-                                                                                        <li>Smaller pixel → less light per pixel</li>
-                                                                                        <li>Exposure only 22 µs → need good SNR</li>
-                                                                                    </ul>
-                                                                                <li>5 µm pixel:</li>
-                                                                                    <ul class="custom-indent">
-                                                                                        <li>Good full well capacity </li>
-                                                                                        <li>Acceptable spatial resolution</li>
-                                                                                        <li>Realistic for 24k sensors.</li>
-                                                                            </ul>
-                                                                    </ul>
-                                                            </ul>
-                                                    </ul>
-                                            </ul>
-                                    </ul>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Data Bandwidth</td>
-                    <td>
-                        <li>24,000 pixels × 45,000 lines/sec = 1,080,000,000 pixels/sec  = ≈ 1.08 Gpixels/sec  </li>
-                            <ul class="custom-indent">
-                                <li>At 8 bits/pixel (1 Byte)/pixel): 1.08 GB/s</li>
-                                <li>At 12 bits/pixel (1.5 Byte/pixel): 1.62 GB/s</li>
-                            </ul>
-                        <li>This exceeds GigE and USB3</li>
-                        <li>Therefore:</li>
-                            <ul class="custom-indent">
-                                <li>Use CoaXPress:</li>
-                                    <ul class="custom-indent">
-                                        <li>CoaXPress 2.0 (12.5 Gbps per cable)</li>
-                                    </ul>
-                                <li>Use Multi-link Camera Link HS:</li>
-                                    <ul class="custom-indent">
-                                        <li>12.5 Gbps × 4 = 50 Gbps theoretical</li>
-                                    </ul>
-                                <li>Both of these choise provide us with more than enough margins at 8bits/pixel and 12bits/pixel.</li>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Frame Grabber</td>
-                    <td>
-                        <li>Line scan requires frame grabber because:</li>
-                            <ul class="custom-indent">
-                                <li>Deterministic acquisition</li>
-                                <li>FPGA-based buffering</li>
-                                <li>Real-time defect processing</li>
-                                <li>Precise synchronization.</li>
-                            </ul>
-                        <li>Frame grabber must support:</li>   
-                            <ul class="custom-indent">
-                                <li>4× CoaXPress</li>
-                                <li>DMA transfer</li>
-                                <li>Industrial cooling.</li>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Lens Selection</td>
-                    <td>
-                        <li>Now optical challenge:</li>
-                            <ul class="custom-indent">
-                                <li>We must cover 1.5 m width at given working distance.</li>
-                                <li>Assume working distance = 1 m.</li>
-                                <li>Sensor width:</li>
-                                    <ul class="custom-indent">
-                                        <li>24k pixels × 5 µm = 120 mm sensor width</li>
-                                        <li>Using formula:</li>
-                                            <ul class="custom-indent">
-                                                <li>FocalLength = ( Sensor-Width × Working-Distance ) / FOV =( 120mm ×1 000mm ) / 1500mm = 80 mm lens.</li>
-                                            </ul>
-                                    </ul>
-                                <li>Optical Challenge:</li>
-                                    <ul class="custom-indent">
-                                        <li>120 mm sensor width is large.</li>
-                                        <li>We need:</li>
-                                            <ul class="custom-indent">
-                                                <li>Large format lens</li>
-                                                <li>High MTF at 5 µm pixel pitch</li>
-                                                <li>Low distortion across 1.5 m</li>
-                                                <li>Likely solution:</li>
-                                                    <ul class="custom-indent">
-                                                        <li>Industrial large-format line scan lens</li>
-                                                        <li>Or, we can deploy a multi-camera stitching system.</li>
-                                                    </ul>
-                                            </ul>
-                                    </ul>
-                            </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Illumination Design</td>
-                    <td>
-                        <li>Steel surface:</li>
-                            <ul class="custom-indent">
-                                <li>Reflective</li>
-                                <li>Specular highlights</li>
-                                <li>Possible oxidation</li>
-                                <li>Goal:</li>
-                                    <ul class="custom-indent">
-                                        <li>Highlight surface scratches</li>
-                                        <li>Best illumination:</li>
-                                            <ul class="custom-indent">
-                                                <li>Dark-field linear LED bars</li>
-                                                <li>Opposing angled illumination</li>
-                                                <li>Possibly structured light.</li>
-                                            </ul>
-                                        <li>Why dark field?</li>
-                                            <ul class="custom-indent">
-                                                <li>Scratches scatter light</li>
-                                                <li>Flat surface reflects away</li>
-                                                <li>Defects appear bright.</li>
-                                            </ul>
-                                        <li>Exposure only 22 µs → need:</li>
-                                            <ul class="custom-indent">
-                                                <li>High-power pulsed linear LED</li>
-                                                <li>Possibly water-cooled lighting.</li>
-                                            </ul>
-                                    </ul>
-                            </ul>
+                            <li>0.20 mm / 3 = 0.067 mm / pixel.</li>
+                            <li>So required spatial sampling: 0.067mm/pixel</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">3</td>
+                        <td data-label="Description">Compute Required Pixels Across Width</td>
+                        <td data-label="Decision">
+                            <li>Compute the number of required pixels across the width: </li>
+                                <ul class="custom-indent">
+                                    <li>Width = 1500 mm</li>
+                                    <li>1500 mm / 0.067 mm / pixel ≈ 22,388 pixels</li>
+                                    <li>So we need approximately: 23k pixels across width </li>
+                                    <li>This immediately tells us:</li>
+                                        <ul class="custom-indent">
+                                            <li>Area scan is not practical</li>
+                                            <li>We need line scan.</li>
+                                        </ul>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">4</td>
+                        <td data-label="Description">Line Rate Requirement (Motion Constraint)</td>
+                        <td data-label="Decision">
+                            <li>Line Rate Requirement (Motion Constraint): </li>
+                                <ul class="custom-indent">
+                                    <li>Strip speed = 3 m/s = 3000 mm/s</li>
+                                    <li>We need vertical resolution also 0.067 mm/pixel.</li>
+                                    <li>So line spacing must equal: 0.067mm </li>
+                                    <li>Line rate required = 3000 / 0.067 ≈ 44,776 lines/sec ≈ 45 kHz line rate</li>
+                                    <li>This is high-speed industrial inspection.</li>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">5</td>
+                        <td data-label="Description">Exposure Time (Motion Blur)</td>
+                        <td data-label="Decision">
+                            <li>Exposure Time (Motion Blur): </li>
+                                <ul class="custom-indent">
+                                    <li>Allow blur ≤ 1 pixel (0.067 mm)</li>
+                                    <li>Using formula: <em> Blur = Speed × Exposure </em> </li>
+                                    <li><em>Exposure ≤ 0.067 / 3000 </em>
+                                    <li>Which yields: <em>Exposure ≤ 22 µs </em>
+                                    <li>This is extremely short.</li>
+                                    <li>Thus:</li>
+                                        <ul class="custom-indent">
+                                            <li>Requires very strong illumination</li>
+                                            <li>Requires high-sensitivity sensor</li>
+                                            <li>Likely requires line scan with TDI if light insufficient.</li>
+                                        </ul>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">6</td>
+                        <td data-label="Description">Sensor Choice</td>
+                        <td data-label="Decision">
+                            <li>Exposure Time (Motion Blur): </li>
+                                <ul class="custom-indent">
+                                    <li>We need:</li>
+                                        <ul class="custom-indent">
+                                            <li>23k pixels horizontal</li>
+                                            <li>45 kHz line rate</li>
+                                            <li>Global shutter equivalent (line scan inherently OK)</li>
+                                            <li>High dynamic range</li>
+                                            <li>High sensitivity at 20 µs exposure</li>
+                                            <li>Industrial solution:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Line scan camera, 16k or 24k resolution:</li>
+                                                        <ul class="custom-indent">
+                                                            <li>Candidates:</li>
+                                                                <ul class="custom-indent">
+                                                                    <li>16k may be insufficient (16k × 0.067 = 1072 mm coverage only)</li>
+                                                                    <li>So we need 23k → choose 24k line scan</li>
+                                                                    <li>Typical 24k pixel size ≈ 5 µm</li>
+                                                                        <ul class="custom-indent">
+                                                                            <li>Why use 5 µm pixel?</li>
+                                                                                <ul class="custom-indent">
+                                                                                    <li>Tradeoff:</li> 
+                                                                                        <ul class="custom-indent">
+                                                                                            <li>Smaller pixel → less light per pixel</li>
+                                                                                            <li>Exposure only 22 µs → need good SNR</li>
+                                                                                        </ul>
+                                                                                    <li>5 µm pixel:</li>
+                                                                                        <ul class="custom-indent">
+                                                                                            <li>Good full well capacity </li>
+                                                                                            <li>Acceptable spatial resolution</li>
+                                                                                            <li>Realistic for 24k sensors.</li>
+                                                                                </ul>
+                                                                        </ul>
+                                                                </ul>
+                                                        </ul>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">7</td>
+                        <td data-label="Description">Data Bandwidth</td>
+                        <td data-label="Decision">
+                            <li>24,000 pixels × 45,000 lines/sec = 1,080,000,000 pixels/sec  = ≈ 1.08 Gpixels/sec  </li>
+                                <ul class="custom-indent">
+                                    <li>At 8 bits/pixel (1 Byte)/pixel): 1.08 GB/s</li>
+                                    <li>At 12 bits/pixel (1.5 Byte/pixel): 1.62 GB/s</li>
+                                </ul>
+                            <li>This exceeds GigE and USB3</li>
+                            <li>Therefore:</li>
+                                <ul class="custom-indent">
+                                    <li>Use CoaXPress:</li>
+                                        <ul class="custom-indent">
+                                            <li>CoaXPress 2.0 (12.5 Gbps per cable)</li>
+                                        </ul>
+                                    <li>Use Multi-link Camera Link HS:</li>
+                                        <ul class="custom-indent">
+                                            <li>12.5 Gbps × 4 = 50 Gbps theoretical</li>
+                                        </ul>
+                                    <li>Both of these choise provide us with more than enough margins at 8bits/pixel and 12bits/pixel.</li>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">8</td>
+                        <td data-label="Description">Frame Grabber</td>
+                        <td data-label="Decision">
+                            <li>Line scan requires frame grabber because:</li>
+                                <ul class="custom-indent">
+                                    <li>Deterministic acquisition</li>
+                                    <li>FPGA-based buffering</li>
+                                    <li>Real-time defect processing</li>
+                                    <li>Precise synchronization.</li>
+                                </ul>
+                            <li>Frame grabber must support:</li>   
+                                <ul class="custom-indent">
+                                    <li>4× CoaXPress</li>
+                                    <li>DMA transfer</li>
+                                    <li>Industrial cooling.</li>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">9</td>
+                        <td data-label="Description">Lens Selection</td>
+                        <td data-label="Decision">
+                            <li>Now optical challenge:</li>
+                                <ul class="custom-indent">
+                                    <li>We must cover 1.5 m width at given working distance.</li>
+                                    <li>Assume working distance = 1 m.</li>
+                                    <li>Sensor width:</li>
+                                        <ul class="custom-indent">
+                                            <li>24k pixels × 5 µm = 120 mm sensor width</li>
+                                            <li>Using formula:</li>
+                                                <ul class="custom-indent">
+                                                    <li>FocalLength = ( Sensor-Width × Working-Distance ) / FOV =( 120mm ×1 000mm ) / 1500mm = 80 mm lens.</li>
+                                                </ul>
+                                        </ul>
+                                    <li>Optical Challenge:</li>
+                                        <ul class="custom-indent">
+                                            <li>120 mm sensor width is large.</li>
+                                            <li>We need:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Large format lens</li>
+                                                    <li>High MTF at 5 µm pixel pitch</li>
+                                                    <li>Low distortion across 1.5 m</li>
+                                                    <li>Likely solution:</li>
+                                                        <ul class="custom-indent">
+                                                            <li>Industrial large-format line scan lens</li>
+                                                            <li>Or, we can deploy a multi-camera stitching system.</li>
+                                                        </ul>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="#">10</td>
+                        <td data-label="Description">Illumination Design</td>
+                        <td data-label="Decision">
+                            <li>Steel surface:</li>
+                                <ul class="custom-indent">
+                                    <li>Reflective</li>
+                                    <li>Specular highlights</li>
+                                    <li>Possible oxidation</li>
+                                    <li>Goal:</li>
+                                        <ul class="custom-indent">
+                                            <li>Highlight surface scratches</li>
+                                            <li>Best illumination:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Dark-field linear LED bars</li>
+                                                    <li>Opposing angled illumination</li>
+                                                    <li>Possibly structured light.</li>
+                                                </ul>
+                                            <li>Why dark field?</li>
+                                                <ul class="custom-indent">
+                                                    <li>Scratches scatter light</li>
+                                                    <li>Flat surface reflects away</li>
+                                                    <li>Defects appear bright.</li>
+                                                </ul>
+                                            <li>Exposure only 22 µs → need:</li>
+                                                <ul class="custom-indent">
+                                                    <li>High-power pulsed linear LED</li>
+                                                    <li>Possibly water-cooled lighting.</li>
+                                                </ul>
+                                        </ul>
+                                </ul>
 
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>10</td>
-                    <td>Trigger & Synchronization</td>
-                    <td>
-                        <li>Critical:</li>
-                            <ul class="custom-indent">
-                                <li>Line rate must sync with encoder</li>
-                                <li>Use:</li>
-                                    <ul class="custom-indent">
-                                        <li>Conveyor rotary encoder</li>
-                                        <li>Line trigger per encoder pulse.</li>
-                                    </ul>
-                                <li>Why?</li>
-                                    <ul class="custom-indent">
-                                        <li>If speed fluctuates:</li>
-                                            <ul class="custom-indent">
-                                                <li>Fixed 45 kHz line rate will distort aspect ratio.</li>
-                                                <li>Encoder-based triggering ensures:</li>
-                                                    <ul class="custom-indent">
-                                                        <li>Constant spatial sampling independent of speed variation.</li>
-                                                    </ul>
-                                    </ul>
-                            </ul>
-                    </td>
-                </tr>
+                    <tr>
+                        <td data-label="#">11</td>
+                        <td data-label="Description">Trigger & Synchronization</td>
+                        <td data-label="Decision">
+                            <li>Critical:</li>
+                                <ul class="custom-indent">
+                                    <li>Line rate must sync with encoder</li>
+                                    <li>Use:</li>
+                                        <ul class="custom-indent">
+                                            <li>Conveyor rotary encoder</li>
+                                            <li>Line trigger per encoder pulse.</li>
+                                        </ul>
+                                    <li>Why?</li>
+                                        <ul class="custom-indent">
+                                            <li>If speed fluctuates:</li>
+                                                <ul class="custom-indent">
+                                                    <li>Fixed 45 kHz line rate will distort aspect ratio.</li>
+                                                    <li>Encoder-based triggering ensures:</li>
+                                                        <ul class="custom-indent">
+                                                            <li>Constant spatial sampling independent of speed variation.</li>
+                                                        </ul>
+                                        </ul>
+                                </ul>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>11</td>
-                    <td>Environmental Considerations</td>
-                    <td>
-                        <li>Steel mill:</li>
-                            <ul class="custom-indent">
-                                <li>Heat</li>
-                                <li>Dust</li>
-                                <li>Vibration</li>
-                                <li>EMI.</li>
-                            </ul>
-                        <li>Therefore:</li>
-                            <ul class="custom-indent">
-                                <li>IP65+ enclosure</li>
-                                <li>Air purge window</li>
-                                <li>Heat shielding</li>
-                                <li>Industrial-rated coax cables</li>
-                                <li>Mechanical stiff gantry.</li>
-                            </ul>
-                    </td>
-                </tr>
+                    <tr>
+                        <td data-label="#">12</td>
+                        <td data-label="Description">Environmental Considerations</td>
+                        <td data-label="Decision">
+                            <li>Steel mill:</li>
+                                <ul class="custom-indent">
+                                    <li>Heat</li>
+                                    <li>Dust</li>
+                                    <li>Vibration</li>
+                                    <li>EMI.</li>
+                                </ul>
+                            <li>Therefore:</li>
+                                <ul class="custom-indent">
+                                    <li>IP65+ enclosure</li>
+                                    <li>Air purge window</li>
+                                    <li>Heat shielding</li>
+                                    <li>Industrial-rated coax cables</li>
+                                    <li>Mechanical stiff gantry.</li>
+                                </ul>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>12</td>
-                    <td>Major risks</td>
-                    <td>
-                        <li>Insufficient illumination at 22 µs</li>
-                            <ul class="custom-indent">
-                                <li>Insufficient illumination at 22 µs</li>
-                                <li>Optical distortion across 1.5 m</li>
-                                <li>Data bottleneck</li>
-                                <li>Thermal drift</li>
-                                <li>Vibration-induced blur.</li>
-                            </ul>
-                        <li>Mitigation:</li>
-                            <ul class="custom-indent">
-                                <li>Perform photon budget calculation</li> 
-                                <li>MTF via manufacturer data</li> 
-                                <li>Over-spec interface bandwidth</li> 
-                                <li>Use rigid mechanical frame</li> 
-                                <li>Implement encoder-based triggering.</li> 
-                            </ul>
-                    </td>
-                </tr>
+                    <tr>
+                        <td data-label="#">13</td>
+                        <td data-label="Description">Major risks</td>
+                        <td data-label="Decision">
+                            <li>Insufficient illumination at 22 µs</li>
+                                <ul class="custom-indent">
+                                    <li>Insufficient illumination at 22 µs</li>
+                                    <li>Optical distortion across 1.5 m</li>
+                                    <li>Data bottleneck</li>
+                                    <li>Thermal drift</li>
+                                    <li>Vibration-induced blur.</li>
+                                </ul>
+                            <li>Mitigation:</li>
+                                <ul class="custom-indent">
+                                    <li>Perform photon budget calculation</li> 
+                                    <li>MTF via manufacturer data</li> 
+                                    <li>Over-spec interface bandwidth</li> 
+                                    <li>Use rigid mechanical frame</li> 
+                                    <li>Implement encoder-based triggering.</li> 
+                                </ul>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
-        <br>
-        <h4>2.2.2: Machine Vision Application # 2: TBD</h4>
-        <br>
-
-
+        
     </section>
 
     </main>
@@ -614,13 +633,14 @@
     <br>
     <br>
         <!-- Scroll to the very top of the document -->
-        <a href="#top" class="back-to-top">Go to top!</a>
+        <a href="#top" class="back-to-top">Top</a>
     <hr>
     <footer>
         <p>© February 2026 &ndash; Mohsen Ghazel</p>
     </footer>
-
+    <!-- Bootstrap JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My JS File -->
     <script src="../js/script.js"></script>
-
 </body>
 </html>
