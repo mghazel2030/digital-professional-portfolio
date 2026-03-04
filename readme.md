@@ -1,4 +1,5 @@
-# Assignment # 1: [Digital Professional Portfolio Website](https://mghazel2030.github.io/digital-professional-portfolio/index.html)
+# Assignment # 1: Personal Website 
+* [**Mohsen Ghazel - Digital Professional Portfolio**](https://mghazel2030.github.io/digital-professional-portfolio/index.html)
 
 ## Project Overview
 
@@ -33,7 +34,7 @@ To overcome these limitations, I rebuilt my portfolio entirely from scratch usin
 
 ---
 
-## Module #1: Foundations of Software Development
+## Module # 1: Foundations of Software Development
 
 During the first module, of the on-going _Software Development Bootcamp_ course, we learned the fundamentals of:
 
@@ -58,7 +59,7 @@ Although I have extensive experience with programming languages such as:
 
 I had limited prior experience with markup and styling languages like HTML and CSS.
 
-### Key Differences Encountered
+### Programming vs. Markup Languages
 
 C, C++, and Python are _general-purpose programming languages_ used to implement logic and computational behavior.
 
@@ -69,7 +70,7 @@ HTML and CSS are _declarative languages_ used to structure and style content for
 
 These differences required a significant adjustment in learning approach.
 
-### Adjustments Made
+### Adjustments
 
 **1. Mindset Shift**
 
@@ -111,32 +112,20 @@ The final _digital professional portfolio_ website includes:
 | Clean CSS architecture | No inline styling — centralized styles.css file |
 | Google Fonts integration | Body: `Inter`; Headings: `Poppins` |
 | Bootstrap integration | Enhanced styling (Contact Form) |
-| Go-to-Top button | Improved user navigation |
+| Go-to-Top hyperlink | Improved user navigation |
 | Professional contact form | Styled input fields and submission button |
-| Visual hierarchy | Structured typography and layout |
-
----
-
-## Technical Implementation
-
-- HTML5 semantic structure
-- CSS3 (Flexbox and Grid)
-- Responsive design using media queries
-- Google Fonts integration
-- Bootstrap styling integration
-- Modular stylesheet organization
-- Mobile-first layout considerations
 
 ---
 
 ## Pages Included
 
+- Home Page
 - Academic Background
 - Professional Experience
 - Software Development Skills
 - Research Publications
-- Technical Projects
 - Professional Development
+- Technical Projects
 - Personal Interests
 - Contact Form
 
@@ -144,18 +133,18 @@ The final _digital professional portfolio_ website includes:
 
 ## Outcome
 
-I am highly satisfied with the first version of this multi-page _digital professional portfolio_. Itrepresents an important transition from using no-code tools to building fully customized web applications from scratch.
+I am highly satisfied with the first version of this multi-page _digital professional portfolio_. It represents an important transition from using no-code web-building tools, such as Google Sites, to building fully customized web applications from scratch.
 
 
 ## GitHub Deployment
 
-I have published my multi-page _digital professional portfolio_ on [_GitHub_](https://mghazel2030.github.io/digital-professional-portfolio/index.html).
+I have published my _digital professional portfolio_ on [_GitHub_](https://mghazel2030.github.io/digital-professional-portfolio/index.html).
 
 ---
 
 ## Future Improvements
 
-I am looking forward to improving this first version of my _digital professional portfolio_ as we continue to learn more advanced web development skills and tools, such as _JavaScript_, in the coming modules of the course.
+I am looking forward to improving this first version of my _digital professional portfolio_ as we continue to learn and practice more advanced web development skills and tools, such as _JavaScript_, in the coming modules of the course.
 
 Planned enhancements include:
 
@@ -173,4 +162,6 @@ _Mohsen Ghazel_
 <br>
 _Digital Professional Portfolio_
 <br>
-_Submitted: March 2nd, 2026_.  
+_Submitted: March 3rd, 2026._ 
+
+---

@@ -1,7 +1,7 @@
 /* =========================================================
-   Master Stylesheet: styles.css
+   Stylesheet file: styles.css
    ---------------------------------------------------------
-   Software Development Bootcamp COurse
+   Software Development Bootcamp Course
    Assignment # 1: Personal Website
    ---------------------------------------------------------
    Student: Mohsen Ghazel
@@ -13,12 +13,13 @@
    Part 2  : Header
    Part 3  : Navigation
    Part 4  : Main Body
-             3.1 Typography
-             3.2 Layout Containers
-             3.3 Sections
-             3.4 Components
-             3.5 Forms
-             3.6 Utilities
+             4.1 Typography
+             4.2 Layout Containers
+             4.3 Sections
+             4.4 Components
+             4.5: Tables
+             4.6 Forms
+             4.7 Utilities
    Part 5  : Footer
    Part 6  : Media Responsiveness
    ========================================================= */
@@ -34,7 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-width: 0; /* Prevents flex/grid overflow */
+    min-width: 0; 
 }
 
 /* --- Root Design Tokens --- */
@@ -55,14 +56,13 @@ html {
 
 /* --- Base Body --- */
 body {
-    /* font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
     /*  TYPOGRAPHY WITH GOOGLE FONTS */
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 
-    /* NEW: Safe horizontal spacing */
+    /* Horizontal left/right margin-spacing */
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -83,14 +83,14 @@ img {
 .intro-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;   /* Align photo to top */
+    align-items: flex-start;   
     gap: 40px;
-    flex-wrap: nowrap;         /* Prevent wrapping on desktop */
+    flex-wrap: nowrap;         
 }
 
 /* Intro text block */
 .intro-text {
-    flex: 1;                   /* Take remaining space */
+    flex: 1;                  
 }
 
 /* Profile photo aligned right */
@@ -99,7 +99,7 @@ img {
     height: auto;
     border-radius: 50%;
     border: 3px solid var(--accent-color);
-    flex-shrink: 0;            /* Prevent shrinking */
+    flex-shrink: 0;            
 }
 
 /* =========================================================
@@ -151,7 +151,6 @@ nav a.active {
     color: var(--white-color);
     font-weight: 600;
 }
-
 
 /* =========================================================
    Part 4: MAIN BODY
@@ -275,12 +274,12 @@ li {
 }
 
 /* ---------------------------------------------------------
-   4.5 Table
+   4.5 TABLES
    --------------------------------------------------------- */
 
 .modern-table {
     width: 100%;
-    border-collapse: collapse;   /* Required for full grid */
+    border-collapse: collapse;  
     margin: 30px 0;
     background: #ffffff;
     border-radius: 10px;
@@ -299,15 +298,14 @@ li {
     font-weight: 600;
     color: #ffffff;
     font-size: 0.95rem;
-    border: 1px solid rgba(255,255,255,0.2); /* subtle header grid */
+    border: 1px solid rgba(255,255,255,0.2); 
 }
 
 /* Body Cells */
 .modern-table td {
     padding: 16px 20px;
     font-size: 0.95rem;
-    /*border: 1px solid #e2e6ed; */ /* full grid borders */
-    border: 1px solid #677aa0;
+    border: 1px solid #677aa0; 
 }
 
 /* Zebra striping */

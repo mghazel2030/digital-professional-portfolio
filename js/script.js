@@ -1,7 +1,7 @@
 /* =========================================================
-   Master JavaScript: script.js
+   JavaScript file: script.js
    ---------------------------------------------------------
-   Software Development Bootcamp COurse
+   Software Development Bootcamp Course
    Assignment # 1: Personal Website
    ---------------------------------------------------------
    Student: Mohsen Ghazel
